@@ -4,7 +4,7 @@ from settings import Settings
 settings = Settings("config/keys.toml")
 openai.api_key = settings["OPEN_API_KEY"]
 
-class Conversations:
+class Conversation:
     """
     Maintains a conversation with ChatGPT by storing messages
     """
