@@ -7,12 +7,12 @@ import io
 import os
 from enum import Enum
 import time
+import threading
 
 class ServerStatus(Enum):
     INITIAL = 0             # Client has just connected
     INITIAL_WAITING = 1     # Client has just connected and screen recording; waiting 8 sec period now
     PROCESSING = 2          # Client is now under processing stage.
-
 
 class SocketReceiver:
     # TO DO: Build ChatGPT queue scheduler
@@ -21,13 +21,25 @@ class SocketReceiver:
         self.user_to_timestamp : dict[str, int] = {}
         self.user_is_running : dict[str, bool] = {}
         
-        self.chat_gpt_scheduler : list = {}
+        self.chat_gpt_scheduler : list = []
     
     def get_status(self, identifier : str):
         if identifier in self.user_states:
             return self.user_states[identifier]
         
         return ServerStatus.INITIAL
+
+    def chat_gpt_scheduler(self):
+        if len(self.chat_gpt_scheduler) == 0:
+            self.chat_gpt_scheduler()
+            time.sleep(1)
+            return
+        
+        item = self.chat_gpt_scheduler[0]
+        # Run stuff on chat gpt
+        # Send it back to Apple device
+        del self.chat_gpt_scheduler[0]
+        self.chat_gpt_scheduler()
 
     async def video_receiver(self, websocket, path):
         async for message in websocket:
@@ -68,7 +80,7 @@ class SocketReceiver:
 
             # Process the frame and its metadata
             file = self.process_frame(timestamp, frame_bytes)
-            # TO DO: Send to gpt.py
+            # TO DO: Send to gpt.py; schedule it here
             # TO DO: Send in notification here
             # Process done. Let them go through next stage now.
             self.user_to_timestamp[identifier] = time.time()
@@ -81,9 +93,16 @@ class SocketReceiver:
         image.save(filename, 'PNG')
         print("Saved")
 
-async def run():
-    receiver = SocketReceiver()
+async def run(receiver):
     async with websockets.serve(receiver.video_receiver, "localhost", 5678):
         await asyncio.Future()
 
-asyncio.run(run())
+receiver = SocketReceiver()
+
+threading.Thread(
+    target = asyncio.run(run(receiver))
+).run()
+
+threading.Thread(
+    target = receiver.chat_gpt_scheduler()
+).run()
