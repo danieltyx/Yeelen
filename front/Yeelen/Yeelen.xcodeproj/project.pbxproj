@@ -36,6 +36,7 @@
 		90CBEDE42AE45875009B6EE0 /* RankBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankBadge.swift; sourceTree = "<group>"; };
 		90CBEDE62AE45AC5009B6EE0 /* TopHit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopHit.swift; sourceTree = "<group>"; };
 		90CBEDE82AE45C31009B6EE0 /* TopHitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopHitManager.swift; sourceTree = "<group>"; };
+		90F17A8B2AE46C0900011DE4 /* Yeelen.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Yeelen.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +71,7 @@
 		90AB82BE2AE449BD0049F204 /* Yeelen */ = {
 			isa = PBXGroup;
 			children = (
+				90F17A8B2AE46C0900011DE4 /* Yeelen.entitlements */,
 				90AB82C32AE449BE0049F204 /* Assets.xcassets */,
 				90CBEDEA2AE45C34009B6EE0 /* TopHit */,
 				90CBEDD52AE45391009B6EE0 /* Extensions */,
@@ -335,6 +337,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Yeelen/Yeelen.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Yeelen/Preview Content\"";
@@ -371,6 +374,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Yeelen/Yeelen.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Yeelen/Preview Content\"";

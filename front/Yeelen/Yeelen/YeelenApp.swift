@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import PushKit
 
 @main
 struct YeelenApp: App {
@@ -15,3 +16,7 @@ struct YeelenApp: App {
         }
     }
 }
+
+//class AppDelegate: NSObject, UIApplicationDelegate, PKPushRegistryDelegate {
+//    
+//}
