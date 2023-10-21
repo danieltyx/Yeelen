@@ -27,12 +27,11 @@ def push_notification(device_token : str, title : str, body : str):
     }
     payload_json = json.dumps(payload)
     headers = {
-        "apns-topic": apns_topic,
-        "apns-key-id": apns_key_id,
+        "apns-push-type": "alert",
         "authorization": f"bearer {auth_token}"
     }
     requests.post(
-        f"api.development.push.apple.com:443/3/device/{device_token}",
+        f"api.sandbox.push.apple.com:443/3/device/{device_token}",
         json = payload_json,
         headers = headers
     )
