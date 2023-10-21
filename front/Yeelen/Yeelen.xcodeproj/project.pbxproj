@@ -20,7 +20,35 @@
 		90CBEDE52AE45875009B6EE0 /* RankBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CBEDE42AE45875009B6EE0 /* RankBadge.swift */; };
 		90CBEDE72AE45AC5009B6EE0 /* TopHit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CBEDE62AE45AC5009B6EE0 /* TopHit.swift */; };
 		90CBEDE92AE45C31009B6EE0 /* TopHitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CBEDE82AE45C31009B6EE0 /* TopHitManager.swift */; };
+		90F17A932AE4944400011DE4 /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90F17A922AE4944400011DE4 /* ReplayKit.framework */; };
+		90F17A962AE4944400011DE4 /* SampleHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F17A952AE4944400011DE4 /* SampleHandler.swift */; };
+		90F17A9A2AE4944400011DE4 /* Broadcast.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 90F17A902AE4944400011DE4 /* Broadcast.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		90F17AA22AE4948A00011DE4 /* Starscream in Frameworks */ = {isa = PBXBuildFile; productRef = 90F17AA12AE4948A00011DE4 /* Starscream */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		90F17A982AE4944400011DE4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 90AB82B42AE449BD0049F204 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 90F17A8F2AE4944400011DE4;
+			remoteInfo = Broadcast;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		90F17A9E2AE4944400011DE4 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				90F17A9A2AE4944400011DE4 /* Broadcast.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		90AB82BC2AE449BD0049F204 /* Yeelen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yeelen.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -37,6 +65,11 @@
 		90CBEDE62AE45AC5009B6EE0 /* TopHit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopHit.swift; sourceTree = "<group>"; };
 		90CBEDE82AE45C31009B6EE0 /* TopHitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopHitManager.swift; sourceTree = "<group>"; };
 		90F17A8B2AE46C0900011DE4 /* Yeelen.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Yeelen.entitlements; sourceTree = "<group>"; };
+		90F17A902AE4944400011DE4 /* Broadcast.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Broadcast.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		90F17A922AE4944400011DE4 /* ReplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReplayKit.framework; path = System/Library/Frameworks/ReplayKit.framework; sourceTree = SDKROOT; };
+		90F17A952AE4944400011DE4 /* SampleHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleHandler.swift; sourceTree = "<group>"; };
+		90F17A972AE4944400011DE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90F17A9F2AE4945800011DE4 /* Broadcast.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Broadcast.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +82,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		90F17A8D2AE4944400011DE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90F17A932AE4944400011DE4 /* ReplayKit.framework in Frameworks */,
+				90F17AA22AE4948A00011DE4 /* Starscream in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -56,6 +98,8 @@
 			isa = PBXGroup;
 			children = (
 				90AB82BE2AE449BD0049F204 /* Yeelen */,
+				90F17A942AE4944400011DE4 /* Broadcast */,
+				90F17A912AE4944400011DE4 /* Frameworks */,
 				90AB82BD2AE449BD0049F204 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -64,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				90AB82BC2AE449BD0049F204 /* Yeelen.app */,
+				90F17A902AE4944400011DE4 /* Broadcast.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -120,6 +165,24 @@
 			path = TopHit;
 			sourceTree = "<group>";
 		};
+		90F17A912AE4944400011DE4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				90F17A922AE4944400011DE4 /* ReplayKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		90F17A942AE4944400011DE4 /* Broadcast */ = {
+			isa = PBXGroup;
+			children = (
+				90F17A9F2AE4945800011DE4 /* Broadcast.entitlements */,
+				90F17A952AE4944400011DE4 /* SampleHandler.swift */,
+				90F17A972AE4944400011DE4 /* Info.plist */,
+			);
+			path = Broadcast;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -130,10 +193,12 @@
 				90AB82B82AE449BD0049F204 /* Sources */,
 				90AB82B92AE449BD0049F204 /* Frameworks */,
 				90AB82BA2AE449BD0049F204 /* Resources */,
+				90F17A9E2AE4944400011DE4 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				90F17A992AE4944400011DE4 /* PBXTargetDependency */,
 			);
 			name = Yeelen;
 			packageProductDependencies = (
@@ -143,6 +208,26 @@
 			productName = Yeelen;
 			productReference = 90AB82BC2AE449BD0049F204 /* Yeelen.app */;
 			productType = "com.apple.product-type.application";
+		};
+		90F17A8F2AE4944400011DE4 /* Broadcast */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 90F17A9B2AE4944400011DE4 /* Build configuration list for PBXNativeTarget "Broadcast" */;
+			buildPhases = (
+				90F17A8C2AE4944400011DE4 /* Sources */,
+				90F17A8D2AE4944400011DE4 /* Frameworks */,
+				90F17A8E2AE4944400011DE4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Broadcast;
+			packageProductDependencies = (
+				90F17AA12AE4948A00011DE4 /* Starscream */,
+			);
+			productName = Broadcast;
+			productReference = 90F17A902AE4944400011DE4 /* Broadcast.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -155,6 +240,9 @@
 				LastUpgradeCheck = 1510;
 				TargetAttributes = {
 					90AB82BB2AE449BD0049F204 = {
+						CreatedOnToolsVersion = 15.1;
+					};
+					90F17A8F2AE4944400011DE4 = {
 						CreatedOnToolsVersion = 15.1;
 					};
 				};
@@ -171,12 +259,14 @@
 			packageReferences = (
 				90CBEDD82AE453BC009B6EE0 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */,
 				90CBEDDF2AE454DE009B6EE0 /* XCRemoteSwiftPackageReference "SwiftUIX" */,
+				90F17AA02AE4948300011DE4 /* XCRemoteSwiftPackageReference "Starscream" */,
 			);
 			productRefGroup = 90AB82BD2AE449BD0049F204 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				90AB82BB2AE449BD0049F204 /* Yeelen */,
+				90F17A8F2AE4944400011DE4 /* Broadcast */,
 			);
 		};
 /* End PBXProject section */
@@ -190,6 +280,13 @@
 				90AB82C72AE449BE0049F204 /* Preview Assets.xcassets in Resources */,
 				90CBEDD42AE450A3009B6EE0 /* NewYork.ttf in Resources */,
 				90AB82C42AE449BE0049F204 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90F17A8E2AE4944400011DE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,7 +307,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		90F17A8C2AE4944400011DE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90F17A962AE4944400011DE4 /* SampleHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		90F17A992AE4944400011DE4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 90F17A8F2AE4944400011DE4 /* Broadcast */;
+			targetProxy = 90F17A982AE4944400011DE4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		90AB82C82AE449BE0049F204 /* Debug */ = {
@@ -335,6 +448,7 @@
 		90AB82CB2AE449BE0049F204 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Yeelen/Yeelen.entitlements;
@@ -372,6 +486,7 @@
 		90AB82CC2AE449BE0049F204 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Yeelen/Yeelen.entitlements;
@@ -406,6 +521,58 @@
 			};
 			name = Release;
 		};
+		90F17A9C2AE4944400011DE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Broadcast/Broadcast.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 44BN78992X;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Broadcast/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Broadcast;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhuhaoyu.Yeelen.Broadcast;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		90F17A9D2AE4944400011DE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Broadcast/Broadcast.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 44BN78992X;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Broadcast/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Broadcast;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhuhaoyu.Yeelen.Broadcast;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -423,6 +590,15 @@
 			buildConfigurations = (
 				90AB82CB2AE449BE0049F204 /* Debug */,
 				90AB82CC2AE449BE0049F204 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		90F17A9B2AE4944400011DE4 /* Build configuration list for PBXNativeTarget "Broadcast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90F17A9C2AE4944400011DE4 /* Debug */,
+				90F17A9D2AE4944400011DE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -446,6 +622,14 @@
 				minimumVersion = 0.1.7;
 			};
 		};
+		90F17AA02AE4948300011DE4 /* XCRemoteSwiftPackageReference "Starscream" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/daltoniam/Starscream";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.6;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -458,6 +642,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 90CBEDDF2AE454DE009B6EE0 /* XCRemoteSwiftPackageReference "SwiftUIX" */;
 			productName = SwiftUIX;
+		};
+		90F17AA12AE4948A00011DE4 /* Starscream */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 90F17AA02AE4948300011DE4 /* XCRemoteSwiftPackageReference "Starscream" */;
+			productName = Starscream;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

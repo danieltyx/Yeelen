@@ -8,6 +8,7 @@
 import SwiftUI
 @_spi(Advanced) import SwiftUIIntrospect
 import SwiftUIX
+import UserNotifications
 
 struct ContentView: View {
     @State var text = ""
