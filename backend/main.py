@@ -1,21 +1,9 @@
-from aiohttp import web
-import socketio
+from flask import Flask, request, jsonify
 
-sio = socketio.AsyncServer()
-app = web.Application()
-sio.attach(app)
+app = Flask(__name__)
 
-@sio.event
-def connect(sid, environ):
-    print("connect ", sid)
+@app.route('/data', methods=["POST"])
+def add_guide():
+    print(request.json)
 
-@sio.event
-async def data(sid, data):
-    print("data received ", data)
-
-@sio.event
-def disconnect(sid):
-    print('disconnect ', sid)
-
-if __name__ == '__main__':
-    web.run_app(app)
+    return ""
