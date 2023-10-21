@@ -1,7 +1,8 @@
 import requests
 import json
-import ssl
+from settings import Settings
 
+settings = Settings()
 def push_notification(device_token : str, title : str, body : str):
     # Your alert data
     # alert_data = {
@@ -9,10 +10,9 @@ def push_notification(device_token : str, title : str, body : str):
     #     "body": "Tap on the 'Cellular' option from the list to access cellular data settings."
     # }
     # You'll need to replace these with your own values
-    device_token = "your_device_token"
-    apns_topic = "your_app_bundle_id"
-    apns_key_id = "your_apns_key_id"
-    auth_token = "your_auth_token"  # generated JWT
+    apns_topic = settings["APNS_BUNDLE_ID"]
+    apns_key_id = settings["APNS_KEY_ID"]
+    auth_token = settings["APNS_AUTH_TOKEN"]
 
     alert_data = {
         "title": title,
