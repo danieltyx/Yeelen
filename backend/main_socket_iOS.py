@@ -67,7 +67,7 @@ class SocketReceiver:
             frame_bytes = base64.b64decode(frame_data["data"])
 
             # Process the frame and its metadata
-            file = self.process_frame(timestamp, frame_bytes)
+            filename = self.process_frame(timestamp, frame_bytes)
             # TO DO: Send to gpt.py
             # TO DO: Send in notification here
             # Process done. Let them go through next stage now.
@@ -80,6 +80,7 @@ class SocketReceiver:
         image = Image.open(io.BytesIO(frame_data))
         image.save(filename, 'PNG')
         print("Saved")
+        return filename
 
 async def run():
     receiver = SocketReceiver()
