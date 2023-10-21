@@ -1,0 +1,7 @@
+bidict==0.22.1
+h11==0.14.0
+python-engineio==4.8.0
+python-socketio==5.10.0
+simple-websocket==1.0.0
+toml==0.10.2
+wsproto==1.2.0
