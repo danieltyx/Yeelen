@@ -10,8 +10,8 @@ def connect(sid, environ):
     print("connect ", sid)
 
 @sio.event
-async def chat_message(sid, data):
-    print("message ", data)
+async def data(sid, data):
+    print("data received ", data)
 
 @sio.event
 def disconnect(sid):
