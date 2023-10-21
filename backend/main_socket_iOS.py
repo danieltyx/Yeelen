@@ -7,6 +7,7 @@ import io
 import os
 from enum import Enum
 import time
+from gpt import ChatGPTHandler
 
 class ServerStatus(Enum):
     INITIAL = 0             # Client has just connected
@@ -20,6 +21,7 @@ class SocketReceiver:
         self.user_states : dict[str, ServerStatus] = {}
         self.user_to_timestamp : dict[str, int] = {}
         self.user_is_running : dict[str, bool] = {}
+        self.chat_gpt_handler : ChatGPTHandler = ChatGPTHandler()
         
         self.chat_gpt_scheduler : list = {}
     
@@ -68,8 +70,9 @@ class SocketReceiver:
 
             # Process the frame and its metadata
             filename = self.process_frame(timestamp, frame_bytes)
-            # TO DO: Send to gpt.py
-            # TO DO: Send in notification here
+            # TODO: Send to gpt.py
+            ChatGPTHandler.chatgpt_response(filename, "Question")     #TODO get the question from frontend
+            # TODO: Send in notification here from apns.py
             # Process done. Let them go through next stage now.
             self.user_to_timestamp[identifier] = time.time()
             self.user_is_running[identifier] = False
