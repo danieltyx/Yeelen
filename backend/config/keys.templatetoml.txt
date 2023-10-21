@@ -1,2 +1,7 @@
 OPEN_API_KEY = "<>"
-APNS_AUTH_TOKEN = ""
+
+APNS_KEY_ID = ""
+APNS_TEAM_ID = ""
+APNS_TOPIC = ".."
+
+TEST_DEVICE_TOKEN = ""
