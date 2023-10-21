@@ -1,0 +1,13 @@
+receive buffer and user question
+
+wait 8s, get the lastest image from buffer
+
+process image, return notification (gpt.py and apns.py)
+
+wait 4s, get the lastest image from buffer
+
+process image, return notification (gpt.py and apns.py)
+....
+....
+until status is "off" --> frontend stop sending buffers
+
