@@ -1,7 +1,7 @@
 import openai
 from settings import Settings
 
-settings = Settings("config/keys.toml")
+settings = Settings()
 openai.api_key = settings["OPEN_API_KEY"]
 
 class Conversation:

@@ -3,7 +3,7 @@ import copy
 import hashlib
 from pathlib import Path
 
-CONFIG_FILE_PATH = Path(__file__).parent / 'data/'
+CONFIG_FILE_PATH = Path(__file__).parent / 'config/'
 
 class Settings:
 	def checksum(self, filename, hash_factory=hashlib.md5, chunk_num_blocks=128):
