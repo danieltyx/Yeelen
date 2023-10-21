@@ -7,6 +7,7 @@ import io
 import os
 from enum import Enum
 import time
+from gpt import ChatGPTHandler
 import threading
 
 class ServerStatus(Enum):
@@ -15,11 +16,13 @@ class ServerStatus(Enum):
     PROCESSING = 2          # Client is now under processing stage.
 
 class SocketReceiver:
-    # TO DO: Build ChatGPT queue scheduler
+    # TODO: Build ChatGPT queue scheduler
+    # TODO add portal to accept the question asked
     def __init__(self):
         self.user_states : dict[str, ServerStatus] = {}
         self.user_to_timestamp : dict[str, int] = {}
         self.user_is_running : dict[str, bool] = {}
+        self.chat_gpt_handler : ChatGPTHandler = ChatGPTHandler()
         
         self.chat_gpt_scheduler : list = []
     
@@ -79,9 +82,10 @@ class SocketReceiver:
             frame_bytes = base64.b64decode(frame_data["data"])
 
             # Process the frame and its metadata
-            file = self.process_frame(timestamp, frame_bytes)
-            # TO DO: Send to gpt.py; schedule it here
-            # TO DO: Send in notification here
+            filename = self.process_frame(timestamp, frame_bytes)
+            # TODO: Send to gpt.py
+            ChatGPTHandler.chatgpt_response(filename, "Question")     #TODO get the question from frontend
+            # TODO: Send in notification here from apns.py
             # Process done. Let them go through next stage now.
             self.user_to_timestamp[identifier] = time.time()
             self.user_is_running[identifier] = False
@@ -92,6 +96,7 @@ class SocketReceiver:
         image = Image.open(io.BytesIO(frame_data))
         image.save(filename, 'PNG')
         print("Saved")
+        return filename
 
 async def run(receiver):
     async with websockets.serve(receiver.video_receiver, "localhost", 5678):

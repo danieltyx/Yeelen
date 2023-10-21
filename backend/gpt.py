@@ -4,28 +4,29 @@ from selenium.common.exceptions import TimeoutException
 from settings import Settings
 import json
 
-settings = Settings()
-chatgpt = ChatGPTAutomation(profile=settings["SELENIUM_FIREFOX_PROFILE"])
-
-def chatgpt_response(image_file : str, question : str):
-    prompt = f"""
-    Your task is to provide the next step for the question {question}. Based on the user's current progress, you should give a clear and concise instruction for the next action to take.
+class ChatGPTHandler:
+    def __init__(self):
+        settings = Settings()
+        self.chatgpt = ChatGPTAutomation(profile=settings["SELENIUM_FIREFOX_PROFILE"])
     
-    Please provide the next step in the form of a JSON object, following the example format below:
-    {
-        "title": "Title of the step",
-        "content": "Specific instruction for the next step",
-        "status": "on"
-    }
+    def chatgpt_response(self, image_file: str, question: str):
+        prompt = f"""
+        Your task is to provide the next step for the question {question}. Based on the user's current progress, you should give a clear and concise instruction for the next action to take.
+        
+        Please provide the next step in the form of a JSON object, following the example format below:
+        {{
+            "title": "Title of the step",
+            "content": "Specific instruction for the next step",
+            "status": "on"
+        }}
 
-    The "title" should indicate the title of the step, the "content" should provide the specific instruction for the next step, and the "status" should be set to "on" if the task is not completed and "off" if this is the last step.
+        The "title" should indicate the title of the step, the "content" should provide the specific instruction for the next step, and the "status" should be set to "on" if the task is not completed and "off" if this is the last step.
 
-    Please make sure that your instruction is clear, accurate, and easy to follow for the user."""
-    chatgpt.open_chat()
-    chatgpt.copy_image_to_clipboard(image_file)
-    chatgpt.paste()
-    chatgpt.send_prompt_to_chatgpt(prompt)
-    json_string  = chatgpt.return_last_response()
-    data = json.loads(json_string)
-    return data
-
+        Please make sure that your instruction is clear, accurate, and easy to follow for the user."""
+        self.chatgpt.open_chat()
+        self.chatgpt.copy_image_to_clipboard(image_file)
+        self.chatgpt.paste()
+        self.chatgpt.send_prompt_to_chatgpt(prompt)
+        json_string  = self.chatgpt.return_last_response()
+        data = json.loads(json_string)
+        return data
