@@ -5,40 +5,11 @@ from aioapns import APNs, NotificationRequest, PushType
 import asyncio
 
 settings = Settings()
-def push_notification(device_token : str, title : str, body : str):
-	# Your alert data
-	# alert_data = {
-	#     "title": "Access Cellular Settings",
-	#     "body": "Tap on the 'Cellular' option from the list to access cellular data settings."
-	# }
-	# You'll need to replace these with your own values
-	apns_topic = settings["APNS_BUNDLE_ID"]
-	apns_key_id = settings["APNS_KEY_ID"]
-	auth_token = settings["APNS_AUTH_TOKEN"]
 
-	alert_data = {
-		"title": title,
-		"body": body
-	}
-	payload = {
-		"aps": {
-			"alert": alert_data,
-			"sound": "default"
-		},
-		"status": "on"
-	}
-	payload_json = json.dumps(payload)
-	headers = {
-		"apns-push-type": "alert",
-		"authorization": f"bearer {auth_token}"
-	}
-	requests.post(
-		f"api.sandbox.push.apple.com:443/3/device/{device_token}",
-		json = payload_json,
-		headers = headers
-	)
+async def send_apns(device_token : str, title : str, body : str):
+	if not device_token:
+		device_token = settings["TEST_DEVICE_TOKEN"]
 
-async def send_apns():
 	apns_key_client = APNs(
 		key='config/key.p8',
 		key_id=settings["APNS_KEY_ID"],
