@@ -6,27 +6,50 @@ import asyncio
 
 settings = Settings()
 
-async def send_apns(device_token : str, title : str, body : str):
-	if not device_token:
-		device_token = settings["TEST_DEVICE_TOKEN"]
-
-	apns_key_client = APNs(
+def get_apns_config() -> APNs:
+	return APNs(
 		key='config/key.p8',
 		key_id=settings["APNS_KEY_ID"],
 		team_id=settings["APNS_TEAM_ID"],
 		topic=settings["APNS_TOPIC"],  # Bundle ID
 		use_sandbox=True,
 	)
+
+
+async def send_apns_event(device_token : str, message : str):
+	if not device_token:
+		device_token = settings["TEST_DEVICE_TOKEN"]
+
 	request = NotificationRequest(
 		device_token=settings["TEST_DEVICE_TOKEN"],
 		message = {
 			"aps": {
-				"alert": "Hello from APNs",
-				"badge": "1",
+				"type": "event",
+				"message": message
 			}
 		},
 	)
-	await apns_key_client.send_notification(request)
+	await (get_apns_config()).send_notification(request)
+
+async def send_apns_instruction(device_token : str, title : str, body : str):
+	if not device_token:
+		device_token = settings["TEST_DEVICE_TOKEN"]
+
+	request = NotificationRequest(
+		device_token=settings["TEST_DEVICE_TOKEN"],
+		message = {
+			"aps": {
+				"type": "instruction",
+				"title": title,
+				"content": body,
+			}
+		},
+	)
+	await (get_apns_config()).send_notification(request)
+
+async def main():
+	await send_apns_event(False, "Close")
+	await send_apns_instruction(False, "Test Title", "Test Body")
 
 asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
-asyncio.run(send_apns())
+asyncio.run(main())
