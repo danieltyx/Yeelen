@@ -16,7 +16,8 @@ class ServerStatus(Enum):
 
 
 class SocketReceiver:
-    # TO DO: Build ChatGPT queue scheduler
+    # TODO: Build ChatGPT queue scheduler
+    # TODO add portal to accept the question asked
     def __init__(self):
         self.user_states : dict[str, ServerStatus] = {}
         self.user_to_timestamp : dict[str, int] = {}
