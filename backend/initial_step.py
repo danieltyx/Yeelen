@@ -1,5 +1,8 @@
 import openai
-openai.api_key = "ENTER KEY HERE"
+from settings import Settings
+
+settings = Settings("config/keys.toml")
+openai.api_key = settings["OPEN_API_KEY"]
 
 class Conversations:
     """
@@ -45,5 +48,3 @@ class Conversations:
                 "content": message,
             }
         )
-
-def ask_gpt_question():
