@@ -1,4 +1,4 @@
-from handler.selenium import ChatGPTAutomation
+from handler.selenium_firefox import ChatGPTAutomation
 
 # rest of your code
 import time
@@ -7,8 +7,12 @@ import time
 chatgpt = ChatGPTAutomation()
 
 # Define a prompt and send it to chatgpt
-chatgpt.save_image_to_clipboard("images/1.png")
+#chatgpt.open_element()
+# chatgpt.save_image_to_clipboard("images/1.png")
+# chatgpt.paste()
+chatgpt.copy_image_to_clipboard("images/1.jpg")
 chatgpt.paste()
+
 prompt = "How to turn off data roaming on an iphone?"
 chatgpt.send_prompt_to_chatgpt(prompt)
 
@@ -22,4 +26,4 @@ print(response)
 
 time.sleep(10)
 # Close the browser and terminate the WebDriver session
-chatgpt.quit()
+#chatgpt.quit()
