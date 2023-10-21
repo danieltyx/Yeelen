@@ -29,4 +29,3 @@ def chatgpt_response(image_file : str, question : str):
     data = json.loads(json_string)
     return data
 
-# print(chatgpt_response("images/1.jpg", "How to turn off data roaming on an iphone?"))
