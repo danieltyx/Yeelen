@@ -1,1 +1,2 @@
 WHISPER_AUDIO_PROMPT = "The transcript is about someone who is confused about how to use a software application."
+SELENIUM_FIREFOX_PROFILE = "C:\\Users\\anubh\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\4054w5a4.default-release"

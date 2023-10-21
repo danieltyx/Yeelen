@@ -34,13 +34,8 @@ class Settings:
 			
 			config_str = str(config_file)
 
-			if 'settings' in config_str:
-				if self.dev:
-					if 'prod' in config_str:
-						continue
-				else:
-					if not 'prod' in config_str:
-						continue
+			if config_str[-5:] != ".toml":
+				continue
 
 			self.reload_file(config_str)
 

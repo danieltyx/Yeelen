@@ -23,7 +23,7 @@ class Conversation:
     """Handles API calling and responses to OpenAI"""
     def _call_api(self) -> str:
         json_data = {
-            "model": Conversations.MODEL,
+            "model": Conversation.MODEL,
             "messages": self.conversation_messages,
             "stream": True
         }
