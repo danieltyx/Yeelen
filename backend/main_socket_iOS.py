@@ -9,6 +9,13 @@ from enum import Enum
 import time
 from gpt import ChatGPTHandler
 import threading
+from dataclasses import dataclass
+
+@dataclass
+class ChatGPTData:
+    identifier : str
+    filepath : str
+    question : str
 
 class ServerStatus(Enum):
     INITIAL = 0             # Client has just connected
@@ -24,15 +31,15 @@ class SocketReceiver:
         self.user_is_running : dict[str, bool] = {}
         self.chat_gpt_handler : ChatGPTHandler = ChatGPTHandler()
         
-        self.chat_gpt_scheduler : list = []
+        self.chat_gpt_scheduler : list[ChatGPTData] = []
     
-    def get_status(self, identifier : str):
+    def get_status(self, identifier : str) -> ServerStatus:
         if identifier in self.user_states:
             return self.user_states[identifier]
         
         return ServerStatus.INITIAL
 
-    def chat_gpt_scheduler(self):
+    def chat_gpt_scheduler(self) -> None:
         if len(self.chat_gpt_scheduler) == 0:
             self.chat_gpt_scheduler()
             time.sleep(1)
@@ -40,6 +47,8 @@ class SocketReceiver:
         
         item = self.chat_gpt_scheduler[0]
         # Run stuff on chat gpt
+        response = ChatGPTHandler.chatgpt_response(item.filepath, item.question) 
+        # TODO: Send in notification here from apns.py
         # Send it back to Apple device
         del self.chat_gpt_scheduler[0]
         self.chat_gpt_scheduler()
@@ -83,14 +92,18 @@ class SocketReceiver:
 
             # Process the frame and its metadata
             filename = self.process_frame(timestamp, frame_bytes)
-            # TODO: Send to gpt.py
-            ChatGPTHandler.chatgpt_response(filename, "Question")     #TODO get the question from frontend
-            # TODO: Send in notification here from apns.py
+
+            data_object = ChatGPTData(
+                identifier,
+                filename,
+                "Question" # TODO: get question from the frontend
+            )
+            self.chat_gpt_scheduler.append(data_object)
             # Process done. Let them go through next stage now.
             self.user_to_timestamp[identifier] = time.time()
             self.user_is_running[identifier] = False
 
-    def process_frame(self, timestamp, frame_data):
+    def process_frame(self, timestamp, frame_data) -> str:
         print(timestamp)
         filename = os.path.join(r"C:\Users\anubh\OneDrive\Documents\UMich Documents\Classes\MATH 395\test", str(timestamp) + ".png")
         image = Image.open(io.BytesIO(frame_data))
