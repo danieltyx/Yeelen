@@ -29,6 +29,8 @@ class SocketReceiver:
         self.user_states : dict[str, ServerStatus] = {}
         self.user_to_timestamp : dict[str, int] = {}
         self.user_is_running : dict[str, bool] = {}
+        self.user_to_question : dict[str, str] = {}
+
         self.chat_gpt_handler : ChatGPTHandler = ChatGPTHandler()
         
         self.chat_gpt_scheduler : list[ChatGPTData] = []
