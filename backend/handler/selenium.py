@@ -72,10 +72,11 @@ class ChatGPTAutomation:
         times_unchanged = 0
         
         while times_unchanged < 3:
-            if current_text.strip() == "ChatGPT":
+            response_elements = self.driver.find_elements(by=By.CSS_SELECTOR, value='div.text-base')
+
+            if response_elements[-1].text.strip() == "ChatGPT":
                 continue
 
-            response_elements = self.driver.find_elements(by=By.CSS_SELECTOR, value='div.text-base')
             if current_text == response_elements[-1].text:
                 times_unchanged += 1
                 time.sleep(0.5)

@@ -1,4 +1,4 @@
-from handler.selenium_firefox import ChatGPTAutomation
+from handler.selenium import ChatGPTAutomation
 import time
 from selenium.common.exceptions import TimeoutException
 from settings import Settings
