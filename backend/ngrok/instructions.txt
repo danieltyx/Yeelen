@@ -1,0 +1,2 @@
+ngrok config add-authtoken <XYZ>
+ngrok http <PORT>

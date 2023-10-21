@@ -18,17 +18,15 @@ async def video_receiver(websocket, path):
 def process_frame(timestamp, frame_data):
     # Your frame processing logic
     print(timestamp)
-    filename = os.path.join("/Users/zhuhaoyu/Downloads/stream", str(timestamp) + ".png")
+    filename = os.path.join(r"C:\Users\anubh\OneDrive\Documents\UMich Documents\Classes\MATH 395\test", str(timestamp) + ".png")
     image = Image.open(io.BytesIO(frame_data))
     image.save(filename, 'PNG')
     print("Saved")
 
-
-
 loop = asyncio.new_event_loop()
 asyncio.set_event_loop(loop)
 
-start_server = websockets.serve(video_receiver, "172.20.10.3", 5678)
+start_server = websockets.serve(video_receiver, "0.0.0.0", 5678)
 
 loop.run_until_complete(start_server)
 loop.run_forever()
