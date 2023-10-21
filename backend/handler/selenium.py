@@ -14,7 +14,9 @@ import pyperclip
 
 class ChatGPTAutomation:
 
-    def __init__(self, chrome_path, chrome_driver_path):
+    def __init__(self, 
+                 chrome_path = r"C:\\Users\\anubh\\OneDrive\\Documents\\Hackathon\\backend\\handler\\chromedriver.exe", 
+                 chrome_driver_path =  r'"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"'):
         """
         This constructor automates the following steps:
         1. Open a Chrome browser with remote debugging enabled at a specified URL.
@@ -46,7 +48,7 @@ class ChatGPTAutomation:
         pyperclip.copy(temp_file_path)
 
     def paste(self):
-        textarea = driver.find_element_by_id('prompt-textarea')
+        textarea = self.driver.find_element_by_id('prompt-textarea')
 
         # Click the text area to focus it
         textarea.click()
@@ -55,7 +57,7 @@ class ChatGPTAutomation:
         action_chains = ActionChains(self.driver)
 
         # Use ActionChains to send the paste command (Command + V for Mac, or Ctrl + V for others)
-        action_chains.key_down(Keys.COMMAND).send_keys('v').key_up(Keys.COMMAND).perform()
+        action_chains.key_down(Keys.CONTROL).send_keys('v').key_up(Keys.CONTROL).perform()
 
 
 
