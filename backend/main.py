@@ -77,6 +77,11 @@ class SocketReceiver:
             self.user_identifier_to_is_running[item.identifier] = False
         else:
             print(f"[INFO] Sending APNS instruction to {self.user_identifier_to_device_token[item.identifier]}")
+            await send_apns_instruction(
+                self.user_identifier_to_device_token[item.identifier],
+                response["title"],
+                response["content"]
+            )
             await send_apns_event(
                 self.user_identifier_to_device_token[item.identifier],
                 "close"
@@ -93,76 +98,78 @@ class SocketReceiver:
         del self.chat_gpt_schedule[0]
         # self.run_chat_gpt_scheduler()
 
-
     async def video_receiver(self, websocket, path) -> None:
-        async for message in websocket:
-            frame_data = json.loads(message)
-            with open("logs.txt", "a") as file:
-                save_data = frame_data
-                if "data" in frame_data:
-                    save_data = deepcopy(frame_data)
-                    del save_data["data"]
+        try:
+            async for message in websocket:
+                frame_data = json.loads(message)
+                with open("logs.txt", "a") as file:
+                    save_data = frame_data
+                    if "data" in frame_data:
+                        save_data = deepcopy(frame_data)
+                        del save_data["data"]
 
-                file.write(json.dumps(save_data, indent=4) + "\n")
+                    file.write(json.dumps(save_data, indent=4) + "\n")
 
-            identifier = frame_data["identifier"]
+                identifier = frame_data["identifier"]
 
-            if frame_data["type"] == "event":
-                match frame_data["message"]:
-                    case "start":
-                        self.user_identifier_to_question[identifier] = frame_data["question"]
-                        self.user_identifier_to_device_token[identifier] = frame_data["apnsDeviceToken"]
-                        print(f"[INFO] Matched {identifier} to device token {frame_data['apnsDeviceToken']}")
-                continue
-
-            status = self.get_status(identifier)
-
-            # This enforcees status "off"
-            if not identifier in self.user_identifier_to_question:
-                continue
-
-            # If their data is already being processed, skip
-            if self.user_identifier_to_is_running.get(identifier, False):
-                continue
-
-            match status:
-                case ServerStatus.INITIAL:
-                    self.user_identifier_to_timestamp[identifier] = time.time()
-                    self.user_identifier_to_status[identifier] = ServerStatus.INITIAL_WAITING
+                if frame_data["type"] == "event":
+                    match frame_data["message"]:
+                        case "start":
+                            self.user_identifier_to_question[identifier] = frame_data["question"]
+                            self.user_identifier_to_device_token[identifier] = frame_data["apnsDeviceToken"]
+                            print(f"[INFO] Matched {identifier} to device token {frame_data['apnsDeviceToken']}")
                     continue
 
-                case ServerStatus.INITIAL_WAITING:
-                    time_diff = time.time() - self.user_identifier_to_timestamp[identifier]
-                    if time_diff < 2:
+                status = self.get_status(identifier)
+
+                # This enforcees status "off"
+                if not identifier in self.user_identifier_to_question:
+                    continue
+
+                # If their data is already being processed, skip
+                if self.user_identifier_to_is_running.get(identifier, False):
+                    continue
+
+                match status:
+                    case ServerStatus.INITIAL:
+                        self.user_identifier_to_timestamp[identifier] = time.time()
+                        self.user_identifier_to_status[identifier] = ServerStatus.INITIAL_WAITING
                         continue
 
-                    # Send in initial prompt data
-                    self.user_identifier_to_is_running[identifier] = True
-                    self.user_identifier_to_status[identifier] = ServerStatus.PROCESSING
-                
-                case ServerStatus.PROCESSING:
-                    time_diff = time.time() - self.user_identifier_to_timestamp[identifier]
-                    if (time.time() - self.user_identifier_to_timestamp[identifier] < 5):
-                        continue
+                    case ServerStatus.INITIAL_WAITING:
+                        time_diff = time.time() - self.user_identifier_to_timestamp[identifier]
+                        if time_diff < 2:
+                            continue
 
-                    self.user_identifier_to_is_running[identifier] = True
+                        # Send in initial prompt data
+                        self.user_identifier_to_is_running[identifier] = True
+                        self.user_identifier_to_status[identifier] = ServerStatus.PROCESSING
+                    
+                    case ServerStatus.PROCESSING:
+                        time_diff = time.time() - self.user_identifier_to_timestamp[identifier]
+                        if (time.time() - self.user_identifier_to_timestamp[identifier] < 5):
+                            continue
 
-            # Do processing here; frame is collected and message is sent based on that        
-            timestamp = frame_data["timestamp"]
-            frame_bytes = base64.b64decode(frame_data["data"])
+                        self.user_identifier_to_is_running[identifier] = True
 
-            # Process the frame and its metadata
-            filename = self.process_frame(self.user_identifier_to_device_token[identifier], timestamp, frame_bytes)
+                # Do processing here; frame is collected and message is sent based on that        
+                timestamp = frame_data["timestamp"]
+                frame_bytes = base64.b64decode(frame_data["data"])
 
-            data_object = ChatGPTData(
-                identifier,
-                filename
-            )
-            print(f"[INFO] {identifier}: added {filename}")
-            self.chat_gpt_schedule.append(data_object)
-            await self.run_chat_gpt_scheduler()
-            print(f"[INFO] Scheduler end")
-            # Process done. Let them go through next stage now.
+                # Process the frame and its metadata
+                filename = self.process_frame(self.user_identifier_to_device_token[identifier], timestamp, frame_bytes)
+
+                data_object = ChatGPTData(
+                    identifier,
+                    filename
+                )
+                print(f"[INFO] {identifier}: added {filename}")
+                self.chat_gpt_schedule.append(data_object)
+                await self.run_chat_gpt_scheduler()
+                print(f"[INFO] Scheduler end")
+                # Process done. Let them go through next stage now.
+        except websockets.exceptions.ConnectionClosedError:
+            pass
 
     def process_frame(self, device_token, timestamp, frame_data) -> str:
         filename = f"{device_token}-{timestamp}.png"
