@@ -81,7 +81,7 @@ class SampleHandler: RPBroadcastSampleHandler, WebSocketDelegate {
 
             counter += 1
 
-            if counter >= 12 {
+            if counter >= 5 {
                 if let image = imageFromSampleBuffer(sampleBuffer: sampleBuffer),
                    let data = image.jpegData(compressionQuality: 0.3) {
                     let timestamp = CMSampleBufferGetPresentationTimeStamp(sampleBuffer)
