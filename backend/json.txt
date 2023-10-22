@@ -138,3 +138,93 @@
 "status": "on"
 }
 
+
+{
+"title": "Turn Off Bluetooth",
+"content": "Tap on the Bluetooth option in the settings menu to access the Bluetooth settings. Once inside, toggle the switch to the Off position to disable Bluetooth.",
+"status": "on"
+}
+
+
+{
+"title": "Toggle Bluetooth Off",
+"content": "Tap on the green switch next to the word Bluetooth to turn it off.",
+"status": "on"
+}
+
+
+Response 1
+{
+"title": "Toggle Bluetooth",
+"content": "Tap on the Bluetooth switch (currently in the on position) to toggle it off.",
+"status": "on"
+}
+ChatGPT
+Response 2
+{
+"title": "Toggle Bluetooth Off",
+"content": "Tap on the Bluetooth toggle switch to turn it off. The switch will change from green (on) to gray (off) indicating that Bluetooth is now turned off.",
+"status": "on"
+}
+
+
+json
+Copy code
+{
+    "title": "Turn off Bluetooth",
+    "content": "Tap on Bluetooth. In the next screen, toggle the switch next to Bluetooth to turn it off.",
+    "status": "on"
+}
+
+
+{
+"title": "Disable Bluetooth",
+"content": "Tap on Bluetooth to access its settings. From there, you can toggle off the Bluetooth switch to disable it.",
+"status": "on"
+}
+
+{
+    "title": "Toggle Bluetooth Switch",
+    "content": "Tap on the Bluetooth option to access its settings. Once inside, you will see a switch at the top. Toggle the switch to turn off Bluetooth.",
+    "status": "on"
+}
+
+
+{
+"title": "Disable Bluetooth",
+"content": "Tap on the Bluetooth option to access its settings.",
+"status": "on"
+}
+
+{
+    "title": "Turn Off Bluetooth",
+    "content": "Tap the green toggle switch next to Bluetooth to turn it off.",
+    "status": "on"
+}
+
+{
+    "title": "Toggle Bluetooth Switch",
+    "content": "Tap the Bluetooth switch to toggle it to the off position.",
+    "status": "on"
+}
+
+
+{
+"title": "Toggle Bluetooth Switch",
+"content": "Tap the switch next to Bluetooth to turn it off. When the switch turns gray, Bluetooth is turned off.",
+"status": "on"
+}
+
+{
+    "title": "Turn Off Bluetooth",
+    "content": "Tap on the Bluetooth switch next to the Bluetooth icon to turn it off. When the switch turns gray, it means Bluetooth is turned off.",
+    "status": "on"
+}
+
+
+{
+"title": "Disable Bluetooth",
+"content": "Tap on the Bluetooth icon located at the top left corner of the screen to turn it off.",
+"status": "on"
+}
+
