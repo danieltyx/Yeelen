@@ -51,5 +51,5 @@ async def main():
 	await send_apns_event(False, "Close")
 	await send_apns_instruction(False, "Test Title", "Test Body")
 
-asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
-asyncio.run(main())
+# asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
+# asyncio.run(main())

@@ -11,6 +11,7 @@ from gpt import ChatGPTHandler
 import threading
 from dataclasses import dataclass
 from apns import send_apns_instruction, send_apns_event
+from copy import deepcopy
 
 @dataclass
 class ChatGPTData:
@@ -77,15 +78,22 @@ class SocketReceiver:
         async for message in websocket:
             # TO DO: add identifier as appropriate
             frame_data = json.loads(message)
+            with open("logs.txt", "a") as file:
+                save_data = frame_data
+                if "data" in frame_data:
+                    save_data = deepcopy(frame_data)
+                    del save_data["data"]
 
-            identifier = message["identifier"]
+                file.write(json.dumps(save_data, indent=4) + "\n")
 
-            if message["type"] == "event":
-                match message["message"]:
+            identifier = frame_data["identifier"]
+
+            if frame_data["type"] == "event":
+                match frame_data["message"]:
                     case "start":
-                        self.user_identifier_to_question[identifier] = message["question"]
-                        self.user_identifier_to_device_token[identifier] = message["apnsDeviceToken"]
-
+                        self.user_identifier_to_question[identifier] = frame_data["question"]
+                        self.user_identifier_to_device_token[identifier] = frame_data["apnsDeviceToken"]
+                        print(f"[INFO] Matched {identifier} to device token {frame_data['apnsDeviceToken']}")
                 continue
 
             status = self.get_status(identifier)
