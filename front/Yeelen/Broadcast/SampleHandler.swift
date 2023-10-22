@@ -8,25 +8,34 @@
 import ReplayKit
 import Starscream
 
-class SampleHandler: RPBroadcastSampleHandler {
+class SampleHandler: RPBroadcastSampleHandler, WebSocketDelegate {
+    func didReceive(event: Starscream.WebSocketEvent, client: Starscream.WebSocketClient) {
+        switch event {
+        case .connected(_):
+            let bodyObject: [String : Any] = [
+                "type": "event",
+                "message": "start",
+                "identifier": identifier.uuidString,
+                "apnsDeviceToken": UserDefaults(suiteName: "group.zhuhaoyu.yeelen")?.string(forKey: "pushNotificationToken") ?? "Error",
+                "question": UserDefaults(suiteName: "group.zhuhaoyu.yeelen")?.string(forKey: "question") ?? "Error",
+            ]
+
+            send(bodyObject: bodyObject)
+        default:
+            break
+        }
+    }
+
     var socket: WebSocket!
     var counter = 0
 
     let identifier = UUID()
 
     override func broadcastStarted(withSetupInfo setupInfo: [String : NSObject]?) {
-        let request = URLRequest(url: URL(string: "ws://happening-bubble-birthday-headlines.trycloudflare.com")!)
+        let request = URLRequest(url: URL(string: "ws://minolta-hdtv-patient-educated.trycloudflare.com")!)
         socket = WebSocket(request: request)
+        socket.delegate = self
         socket.connect()
-
-        let bodyObject: [String : Any] = [
-            "type": "event",
-            "message": "start",
-            "identifier": identifier.uuidString,
-            "apnsDeviceToken": UserDefaults(suiteName: "group.zhuhaoyu.yeelen")?.string(forKey: "pushNotificationToken") ?? "Error"
-        ]
-
-        send(bodyObject: bodyObject)
     }
     
     override func broadcastPaused() {
@@ -54,7 +63,7 @@ class SampleHandler: RPBroadcastSampleHandler {
 
             if counter >= 24 {
                 if let image = imageFromSampleBuffer(sampleBuffer: sampleBuffer),
-                   let data = image.jpegData(compressionQuality: 0.5) {
+                   let data = image.jpegData(compressionQuality: 0.3) {
                     let timestamp = CMSampleBufferGetPresentationTimeStamp(sampleBuffer)
 
                     let bodyObject: [String : Any] = [

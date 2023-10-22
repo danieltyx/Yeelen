@@ -24,6 +24,11 @@
 		90F17A962AE4944400011DE4 /* SampleHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F17A952AE4944400011DE4 /* SampleHandler.swift */; };
 		90F17A9A2AE4944400011DE4 /* Broadcast.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 90F17A902AE4944400011DE4 /* Broadcast.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		90F17AA22AE4948A00011DE4 /* Starscream in Frameworks */ = {isa = PBXBuildFile; productRef = 90F17AA12AE4948A00011DE4 /* Starscream */; };
+		90F17AA52AE49B5D00011DE4 /* TutorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F17AA42AE49B5D00011DE4 /* TutorialView.swift */; };
+		90F17AA72AE49B9200011DE4 /* TextStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F17AA62AE49B9200011DE4 /* TextStepView.swift */; };
+		90F17AA92AE49C5500011DE4 /* Holder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F17AA82AE49C5500011DE4 /* Holder.swift */; };
+		90F17AAC2AE4A4C400011DE4 /* MeasureOffset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F17AAB2AE4A4C400011DE4 /* MeasureOffset.swift */; };
+		90F17AAE2AE4AB6700011DE4 /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F17AAD2AE4AB6700011DE4 /* BackButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +75,11 @@
 		90F17A952AE4944400011DE4 /* SampleHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleHandler.swift; sourceTree = "<group>"; };
 		90F17A972AE4944400011DE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		90F17A9F2AE4945800011DE4 /* Broadcast.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Broadcast.entitlements; sourceTree = "<group>"; };
+		90F17AA42AE49B5D00011DE4 /* TutorialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialView.swift; sourceTree = "<group>"; };
+		90F17AA62AE49B9200011DE4 /* TextStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextStepView.swift; sourceTree = "<group>"; };
+		90F17AA82AE49C5500011DE4 /* Holder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Holder.swift; sourceTree = "<group>"; };
+		90F17AAB2AE4A4C400011DE4 /* MeasureOffset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasureOffset.swift; sourceTree = "<group>"; };
+		90F17AAD2AE4AB6700011DE4 /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +126,7 @@
 		90AB82BE2AE449BD0049F204 /* Yeelen */ = {
 			isa = PBXGroup;
 			children = (
+				90F17AA32AE49B5400011DE4 /* Tutorial */,
 				90F17A8B2AE46C0900011DE4 /* Yeelen.entitlements */,
 				90AB82C32AE449BE0049F204 /* Assets.xcassets */,
 				90CBEDEA2AE45C34009B6EE0 /* TopHit */,
@@ -126,6 +137,7 @@
 				90AB82C52AE449BE0049F204 /* Preview Content */,
 				90AB82C12AE449BD0049F204 /* ContentView.swift */,
 				90AB82CD2AE44BA00049F204 /* Launch Screen.storyboard */,
+				90F17AA82AE49C5500011DE4 /* Holder.swift */,
 			);
 			path = Yeelen;
 			sourceTree = "<group>";
@@ -150,6 +162,7 @@
 		90CBEDD52AE45391009B6EE0 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				90F17AAB2AE4A4C400011DE4 /* MeasureOffset.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -181,6 +194,16 @@
 				90F17A972AE4944400011DE4 /* Info.plist */,
 			);
 			path = Broadcast;
+			sourceTree = "<group>";
+		};
+		90F17AA32AE49B5400011DE4 /* Tutorial */ = {
+			isa = PBXGroup;
+			children = (
+				90F17AA42AE49B5D00011DE4 /* TutorialView.swift */,
+				90F17AA62AE49B9200011DE4 /* TextStepView.swift */,
+				90F17AAD2AE4AB6700011DE4 /* BackButton.swift */,
+			);
+			path = Tutorial;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,7 +323,12 @@
 				90CBEDE92AE45C31009B6EE0 /* TopHitManager.swift in Sources */,
 				90CBEDD32AE44FEB009B6EE0 /* Font+.swift in Sources */,
 				90CBEDE32AE455DB009B6EE0 /* TopHitCard.swift in Sources */,
+				90F17AAC2AE4A4C400011DE4 /* MeasureOffset.swift in Sources */,
+				90F17AA92AE49C5500011DE4 /* Holder.swift in Sources */,
 				90CBEDE52AE45875009B6EE0 /* RankBadge.swift in Sources */,
+				90F17AA72AE49B9200011DE4 /* TextStepView.swift in Sources */,
+				90F17AA52AE49B5D00011DE4 /* TutorialView.swift in Sources */,
+				90F17AAE2AE4AB6700011DE4 /* BackButton.swift in Sources */,
 				90AB82C22AE449BD0049F204 /* ContentView.swift in Sources */,
 				90AB82C02AE449BD0049F204 /* YeelenApp.swift in Sources */,
 				90CBEDE72AE45AC5009B6EE0 /* TopHit.swift in Sources */,

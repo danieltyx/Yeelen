@@ -8,11 +8,28 @@
 import SwiftUI
 
 struct TextStepView: View {
+    let index: Int
+    let content: String
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack(alignment: .top, spacing: 20) {
+            Image("first")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 36, height: 36)
+                .clipShape(Circle())
+                .overlay {
+                    Text("\(index).")
+                        .foregroundStyle(.white.opacity(0.8))
+                        .yFont(.semibold, size: 18)
+                }
+
+            Text(content)
+                .yFont(.semibold, size: 16)
+        }
     }
 }
 
 #Preview {
-    TextStepView()
+    TextStepView(index: 1, content: "Tap the “Start Broadcast” button below.")
 }

@@ -21,6 +21,7 @@ struct RankBadge: View {
                     Text("#1")
                         .yFont(.bold, size: 13)
                         .multilineTextAlignment(.center)
+                        .foregroundStyle(.white)
                         .opacity(0.8)
                 }
         } else {
@@ -37,6 +38,7 @@ struct RankBadge: View {
                     Text("#\(rank)")
                         .yFont(.bold, size: 13)
                         .multilineTextAlignment(.center)
+                        .foregroundStyle(.white)
                         .opacity(0.8)
                 }
         }
