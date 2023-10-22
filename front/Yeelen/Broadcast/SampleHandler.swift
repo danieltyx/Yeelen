@@ -50,6 +50,8 @@ class SampleHandler: RPBroadcastSampleHandler, WebSocketDelegate {
             }
             self.finishBroadcastWithError(Finish.finish)
         }
+
+        UserDefaults(suiteName: "group.zhuhaoyu.yeelen")?.set(true, forKey: "status")
     }
     
     override func broadcastPaused() {
@@ -62,10 +64,12 @@ class SampleHandler: RPBroadcastSampleHandler, WebSocketDelegate {
     
     override func broadcastFinished() {
         // User has requested to finish the broadcast.
+        UserDefaults(suiteName: "group.zhuhaoyu.yeelen")?.set(false, forKey: "status")
         socket.disconnect(closeCode: 1000)
     }
 
     deinit {
+        UserDefaults(suiteName: "group.zhuhaoyu.yeelen")?.set(false, forKey: "status")
         socket.disconnect(closeCode: 1000)
     }
 

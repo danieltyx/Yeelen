@@ -10,6 +10,8 @@
 		900390502AE4CFDB00F3858C /* FirebaseApp in Frameworks */ = {isa = PBXBuildFile; productRef = 9003904F2AE4CFDB00F3858C /* FirebaseApp */; };
 		900390522AE4D04600F3858C /* Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900390512AE4D04600F3858C /* Firebase.swift */; };
 		900390542AE4D10800F3858C /* Firestore in Frameworks */ = {isa = PBXBuildFile; productRef = 900390532AE4D10800F3858C /* Firestore */; };
+		900390572AE4E87A00F3858C /* InProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900390562AE4E87A00F3858C /* InProgressView.swift */; };
+		900390592AE4EE9200F3858C /* ProgressWrappedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900390582AE4EE9200F3858C /* ProgressWrappedView.swift */; };
 		90AB82C02AE449BD0049F204 /* YeelenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90AB82BF2AE449BD0049F204 /* YeelenApp.swift */; };
 		90AB82C22AE449BD0049F204 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90AB82C12AE449BD0049F204 /* ContentView.swift */; };
 		90AB82C42AE449BE0049F204 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90AB82C32AE449BE0049F204 /* Assets.xcassets */; };
@@ -60,6 +62,8 @@
 
 /* Begin PBXFileReference section */
 		900390512AE4D04600F3858C /* Firebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Firebase.swift; sourceTree = "<group>"; };
+		900390562AE4E87A00F3858C /* InProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InProgressView.swift; sourceTree = "<group>"; };
+		900390582AE4EE9200F3858C /* ProgressWrappedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressWrappedView.swift; sourceTree = "<group>"; };
 		90AB82BC2AE449BD0049F204 /* Yeelen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yeelen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90AB82BF2AE449BD0049F204 /* YeelenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YeelenApp.swift; sourceTree = "<group>"; };
 		90AB82C12AE449BD0049F204 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -110,6 +114,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		900390552AE4E86F00F3858C /* InProgress */ = {
+			isa = PBXGroup;
+			children = (
+				900390562AE4E87A00F3858C /* InProgressView.swift */,
+				900390582AE4EE9200F3858C /* ProgressWrappedView.swift */,
+			);
+			path = InProgress;
+			sourceTree = "<group>";
+		};
 		90AB82B32AE449BD0049F204 = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +145,7 @@
 		90AB82BE2AE449BD0049F204 /* Yeelen */ = {
 			isa = PBXGroup;
 			children = (
+				900390552AE4E86F00F3858C /* InProgress */,
 				90F17AA32AE49B5400011DE4 /* Tutorial */,
 				90F17A8B2AE46C0900011DE4 /* Yeelen.entitlements */,
 				90AB82C32AE449BE0049F204 /* Assets.xcassets */,
@@ -330,8 +344,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				900390572AE4E87A00F3858C /* InProgressView.swift in Sources */,
 				90CBEDE92AE45C31009B6EE0 /* TopHitManager.swift in Sources */,
 				90CBEDD32AE44FEB009B6EE0 /* Font+.swift in Sources */,
+				900390592AE4EE9200F3858C /* ProgressWrappedView.swift in Sources */,
 				90CBEDE32AE455DB009B6EE0 /* TopHitCard.swift in Sources */,
 				90F17AAC2AE4A4C400011DE4 /* MeasureOffset.swift in Sources */,
 				90F17AA92AE49C5500011DE4 /* Holder.swift in Sources */,
