@@ -48,7 +48,6 @@ class AppDelegate: NSObject, UIApplicationDelegate, UNUserNotificationCenterDele
     }
 
     func registryToken(deviceToken: Data) {
-        print("dooo")
         let tokenParts = deviceToken.map { data in String(format: "%02.2hhx", data) }
         let token = tokenParts.joined()
         let pastToken = UserDefaults(suiteName: "group.zhuhaoyu.yeelen")?.string(forKey: "pushNotificationToken")
