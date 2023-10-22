@@ -71,6 +71,9 @@ struct ContentView: View {
                         }
                     }
                     .padding(.bottom, 180)
+                    .background(Color(hexadecimal: "1A1A1A").onTapGesture(perform: {
+                        focus = false
+                    }))
                 }
                 .padding(.top, 40)
 

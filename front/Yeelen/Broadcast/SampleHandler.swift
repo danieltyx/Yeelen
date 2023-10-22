@@ -32,7 +32,7 @@ class SampleHandler: RPBroadcastSampleHandler, WebSocketDelegate {
     let identifier = UUID()
 
     override func broadcastStarted(withSetupInfo setupInfo: [String : NSObject]?) {
-        let request = URLRequest(url: URL(string: "ws://mil-ez-playing-montreal.trycloudflare.com")!)
+        let request = URLRequest(url: URL(string: "ws://minolta-hdtv-patient-educated.trycloudflare.com")!)
         socket = WebSocket(request: request)
         socket.delegate = self
         socket.connect()
@@ -63,7 +63,7 @@ class SampleHandler: RPBroadcastSampleHandler, WebSocketDelegate {
 
             if counter >= 24 {
                 if let image = imageFromSampleBuffer(sampleBuffer: sampleBuffer),
-                   let data = image.jpegData(compressionQuality: 0.5) {
+                   let data = image.jpegData(compressionQuality: 0.3) {
                     let timestamp = CMSampleBufferGetPresentationTimeStamp(sampleBuffer)
 
                     let bodyObject: [String : Any] = [

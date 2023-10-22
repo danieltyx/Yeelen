@@ -72,6 +72,11 @@ struct TutorialView: View {
                     }
                     .padding(.horizontal, 30)
 
+                    Image("screen2")
+                        .resizable()
+                        .scaledToFit()
+                        .padding(.horizontal, 50)
+
                     HStack {
                         TextStepView(index: 5, content: "Follow the instructions, and once you finish this step, instructions for the next step will be sent.")
 
@@ -89,7 +94,7 @@ struct TutorialView: View {
                 .padding(.top, 20)
                 .padding(.bottom, 180)
                 .measureScroll { offset in
-                    if offset.y <= 20 {
+                    if offset.y <= 20 && offset.y > -200 {
                         read = read || true
                     }
                 }
