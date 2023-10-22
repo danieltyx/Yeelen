@@ -228,3 +228,51 @@ Copy code
 "status": "on"
 }
 
+{
+    "title": "Disable Bluetooth",
+    "content": "Tap on the Bluetooth option to access Bluetooth settings.",
+    "status": "on"
+}
+
+
+{
+"title": "Disable Bluetooth",
+"content": "Tap on the Bluetooth option to access Bluetooth settings.",
+"status": "on"
+}
+
+
+{
+"title": "Disable Bluetooth",
+"content": "Tap on the Bluetooth option to access Bluetooth settings.",
+"status": "on"
+}
+
+
+{
+"title": "Turn Off Bluetooth",
+"content": "Tap on the green toggle switch next to Bluetooth to turn it off.",
+"status": "on"
+}
+
+
+{
+"title": "Turn off Bluetooth",
+"content": "Tap the switch next to Bluetooth to turn it off. The switch will turn from blue to gray when Bluetooth is off.",
+"status": "on"
+}
+
+
+{
+"title": "Bluetooth Settings",
+"content": "Tap on the Bluetooth option to access the Bluetooth settings.",
+"status": "on"
+}
+
+
+{
+"title": "Bluetooth Settings",
+"content": "Tap on Bluetooth in the settings menu to access Bluetooth settings.",
+"status": "on"
+}
+

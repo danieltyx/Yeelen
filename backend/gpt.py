@@ -9,19 +9,18 @@ class ChatGPTHandler:
         self.chatgpt = ChatGPTAutomation(profile=settings["SELENIUM_FIREFOX_PROFILE"])
     
     def chatgpt_response(self, image_file: str, question: str):
-        prompt = f"""
-        Your task is to provide the next step for the question "{question}". Using the image provided to you, give a clear and concise instruction for the next action to take.
-        
-        Please provide the next step in the form of a JSON object, following the example format below:
-        {{
-            "title": "Title of the step",
-            "content": "Specific instruction for the next step",
-            "status": "on"
-        }}
+        prompt = f"""Your task is to provide the next step for the question {question}, give a clear and concise instruction for the next action to take.
 
-        The "title" should indicate the title of the step. The "content" should provide the specific instruction for the next step.  If there are no more actions to take, then the "status" should be set to "off". Otherwise, it should remain "on".
+Please provide the next step in the form of a JSON object, following the example format below:
+{{
+    "title": "Title of the step",
+    "content": "Specific instruction for the next step",
+    "status": "on"
+}}
 
-        Please make sure that your instruction is clear, accurate, in plain text format, and easy to follow for the user."""
+The "title" should indicate the title of the step. The "content" should provide the specific instruction for the next step. If this next step is the very last step needed to answer the question, then set the status to "off", otherwise, it remains "on".
+
+Please make sure that your instruction is clear, accurate, in plain text format, and easy to follow for the user"""
         self.chatgpt.open_chat()
         self.chatgpt.copy_image_to_clipboard(image_file)
         self.chatgpt.paste()
