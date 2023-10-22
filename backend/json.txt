@@ -1,0 +1,63 @@
+
+{
+"title": "Access Cellular Settings",
+"content": "Tap on the Cellular option from the list in your settings.",
+"status": "on"
+}
+
+
+{
+"title": "Access Cellular Data Options",
+"content": "Tap on the Cellular option from the list in your settings.",
+"status": "on"
+}
+
+
+{
+"title": "Access Data Roaming Settings",
+"content": "Tap on Cellular Data Options which is just above the Personal Hotspot option.",
+"status": "on"
+}
+
+
+{
+"title": "Access Cellular Data Options",
+"content": "Tap on Cellular Data Options which is located just above the Personal Hotspot option.",
+"status": "on"
+}
+
+
+{
+"title": "Access Data Roaming",
+"content": "Tap on Cellular Data Options. Once inside, you will find the Data Roaming toggle. Toggle it to the off position to disable data roaming.",
+"status": "on"
+}
+
+
+{
+"title": "Access Data Roaming Settings",
+"content": "Tap on Cellular Data Options. Once inside, you should find the Data Roaming toggle. Tap on it to turn off data roaming.",
+"status": "on"
+}
+
+
+{
+"title": "Toggle Data Roaming",
+"content": "Tap on Data Roaming to turn it off. If the toggle switch turns gray, it means data roaming has been disabled.",
+"status": "on"
+}
+
+
+{
+"title": "Toggle Data Roaming",
+"content": "Tap on the Data Roaming option to turn it off. When the toggle switch turns gray, it means data roaming has been turned off.",
+"status": "on"
+}
+
+
+{
+"title": "Toggle Data Roaming",
+"content": "Tap on the Data Roaming option. If the toggle switch turns gray, it means data roaming is off.",
+"status": "off"
+}
+

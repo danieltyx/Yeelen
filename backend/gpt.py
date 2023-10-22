@@ -21,13 +21,16 @@ class ChatGPTHandler:
 
         The "title" should indicate the title of the step, the "content" should provide the specific instruction for the next step, and the "status" should be set to "on" if the task is not completed and "off" if this is the last step.
 
-        Please make sure that your instruction is clear, accurate, and easy to follow for the user."""
+        Please make sure that your instruction is clear, accurate, in plain text format, and easy to follow for the user."""
         self.chatgpt.open_chat()
         self.chatgpt.copy_image_to_clipboard(image_file)
         self.chatgpt.paste()
         self.chatgpt.send_prompt_to_chatgpt(prompt)
 
-        json_string  = self.chatgpt.return_last_response().strip().lstrip("ChatGPT")
+        json_string  = self.chatgpt.return_last_response().strip().lstrip("ChatGPT").replace("'", "")
+        with open("json.txt", "a") as file:
+            file.write(f"{json_string}\n\n")
+
         data = json.loads(json_string)
         return data
 
