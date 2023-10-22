@@ -21,6 +21,7 @@ class SampleHandler: RPBroadcastSampleHandler, WebSocketDelegate {
             ]
 
             send(bodyObject: bodyObject)
+            started = true
         default:
             break
         }
@@ -28,14 +29,27 @@ class SampleHandler: RPBroadcastSampleHandler, WebSocketDelegate {
 
     var socket: WebSocket!
     var counter = 0
+    var started = false
 
     let identifier = UUID()
 
     override func broadcastStarted(withSetupInfo setupInfo: [String : NSObject]?) {
-        let request = URLRequest(url: URL(string: "ws://minolta-hdtv-patient-educated.trycloudflare.com")!)
-        socket = WebSocket(request: request)
-        socket.delegate = self
-        socket.connect()
+        Task {
+            let urlString = try await FirebaseManager.shared.read()
+            print(urlString)
+
+            let request = URLRequest(url: URL(string: urlString)!)
+            socket = WebSocket(request: request)
+            socket.delegate = self
+            socket.connect()
+        }
+
+        Task {
+            while !(UserDefaults(suiteName: "group.zhuhaoyu.yeelen")?.bool(forKey: "shouldClose") ?? false) {
+                try? await Task.sleep(for: .seconds(1))
+            }
+            self.finishBroadcastWithError(Finish.finish)
+        }
     }
     
     override func broadcastPaused() {
@@ -59,9 +73,11 @@ class SampleHandler: RPBroadcastSampleHandler, WebSocketDelegate {
         switch sampleBufferType {
         case RPSampleBufferType.video:
             // Handle video sample buffer
+            guard started else { return }
+
             counter += 1
 
-            if counter >= 24 {
+            if counter >= 12 {
                 if let image = imageFromSampleBuffer(sampleBuffer: sampleBuffer),
                    let data = image.jpegData(compressionQuality: 0.3) {
                     let timestamp = CMSampleBufferGetPresentationTimeStamp(sampleBuffer)
@@ -107,6 +123,11 @@ class SampleHandler: RPBroadcastSampleHandler, WebSocketDelegate {
                 return UIImage(cgImage: temporaryImage)
             }
         }
+
         return nil
     }
+}
+
+enum Finish: String, Error {
+    case finish = "Amazing! You have done this! You have caught up!"
 }
