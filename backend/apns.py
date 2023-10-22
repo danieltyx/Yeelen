@@ -15,19 +15,20 @@ def get_apns_config() -> APNs:
 		use_sandbox=True,
 	)
 
-
 async def send_apns_event(device_token : str, message : str):
 	if not device_token:
 		device_token = settings["TEST_DEVICE_TOKEN"]
 
 	request = NotificationRequest(
-		device_token=settings["TEST_DEVICE_TOKEN"],
+		device_token=device_token,
 		message = {
 			"aps": {
+				"alert": "Yeelen",
 				"type": "event",
 				"message": message
 			}
 		},
+		push_type=PushType.BACKGROUND
 	)
 	await (get_apns_config()).send_notification(request)
 
@@ -36,20 +37,22 @@ async def send_apns_instruction(device_token : str, title : str, body : str):
 		device_token = settings["TEST_DEVICE_TOKEN"]
 
 	request = NotificationRequest(
-		device_token=settings["TEST_DEVICE_TOKEN"],
+		device_token=device_token,
 		message = {
 			"aps": {
+				"alert": "Yeelen",
 				"type": "instruction",
 				"title": title,
 				"content": body,
 			}
 		},
+		push_type=PushType.BACKGROUND
 	)
 	await (get_apns_config()).send_notification(request)
 
 async def main():
-	await send_apns_event(False, "Close")
-	await send_apns_instruction(False, "Test Title", "Test Body")
+	await send_apns_event("7d8b3a24cd5827c583367c1037ed6821ed2a0592931b8908a1c256f2ad5a7a46", "Close")
+	await send_apns_instruction("7d8b3a24cd5827c583367c1037ed6821ed2a0592931b8908a1c256f2ad5a7a46", "Test Title", "Test Body")
 
-# asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
-# asyncio.run(main())
+asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
+asyncio.run(main())
