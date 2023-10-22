@@ -338,3 +338,240 @@ Copy code
 "status": "on"
 }
 
+
+{
+"title": "Turn Off Bluetooth",
+"content": "In the Settings app, tap on the Bluetooth option. Once inside, you will see a toggle switch at the top. Tap on the switch to turn off Bluetooth.",
+"status": "off"
+}
+
+
+{
+"title": "Turning off Bluetooth",
+"content": "Tap on the Bluetooth option to access the Bluetooth settings.",
+"status": "on"
+}
+
+
+{
+"title": "Toggle Bluetooth Setting",
+"content": "Tap on the Bluetooth option, which currently shows On, to toggle and turn it off.",
+"status": "off"
+}
+
+
+{
+"title": "Navigate to Bluetooth Settings",
+"content": "Open the Settings app on your device. Scroll down until you see the Bluetooth option and tap on it.",
+"status": "on"
+}
+
+
+!
+Youve reached the current usage cap for GPT-4. You can continue with the default model now, or try again after 4:52 AM. Learn more
+Use default model
+
+
+!
+Youve reached the current usage cap for GPT-4. You can continue with the default model now, or try again after 4:52 AM. Learn more
+Use default model
+
+
+{
+"title": "Access Profile Settings",
+"content": "On the Facebook apps main screen, tap on Profile located at the bottom right corner. This will take you to your personal Facebook profile page.",
+"status": "on"
+}
+
+{
+    "title": "Navigate to the Profile Details",
+    "content": "On the main Facebook app screen, scroll down to the Details section and tap on the Current city option.",
+    "status": "on"
+}
+
+
+{
+"title": "Accessing Profile Settings",
+"content": "On your profile page, tap on the Details section where you see options like Current city and Workplace.",
+"status": "on"
+}
+
+{
+    "title": "Accessing Hometown Settings",
+    "content": "On your profile page, scroll down to the Details section. Here, you should see options like Current city and Workplace. Tap on Current city to edit or change your hometown information.",
+    "status": "on"
+}
+
+
+{
+"title": "Navigating to Hometown Setting",
+"content": "Once in the Details section, scroll down until you find the Hometown option. Tap on it to edit or change your hometown information.",
+"status": "on"
+}
+
+
+{
+"title": "Go to Profile Details",
+"content": "On your Facebook profile page, scroll down to the Details section. Here, youll find options such as Current city and Workplace. Look for an option that says Hometown or similar.",
+"status": "on"
+}
+
+{
+    "title": "Navigate to Profile Details",
+    "content": "On the Facebook app, go to your profile page and scroll down until you find the Details section. Tap on Current city under Details.",
+    "status": "on"
+}
+
+
+{
+"title": "Open Profile Settings",
+"content": "In the Facebook app, tap on the three horizontal lines (menu icon) at the bottom right corner of the screen. Then, select your profile picture/name at the top to access your profile page.",
+"status": "on"
+}
+
+{
+    "title": "Navigate to Personal Information",
+    "content": "In the Facebook app, tap on the Profile icon at the bottom right corner of the screen. Once on your profile page, scroll down and tap on Details to view and edit your personal information.",
+    "status": "on"
+}
+
+{
+    "title": "Navigate to Profile Details",
+    "content": "From the main profile page, scroll down until you see the Details section. Tap on Current city or the house icon next to it.",
+    "status": "on"
+}
+
+
+{
+"title": "Access Profile Details",
+"content": "From your main profile page as shown, scroll down until you find the Details section. Once there, tap on the Current city option to edit or change it to your desired hometown.",
+"status": "on"
+}
+
+
+{
+"title": "Edit Public Details",
+"content": "Tap on the Edit public details button located right below the Relationship Status section.",
+"status": "on"
+}
+
+{
+    "title": "Select Relationship Status Section",
+    "content": "Scroll down until you find the Relationship Status section. Just below it, you should see the Edit public details button. Tap on that button to proceed.",
+    "status": "on"
+}
+
+{
+    "title": "Navigate to Your Profile",
+    "content": "Once you are in the main interface of the Facebook app, tap on the three horizontal lines (menu icon) usually found at the bottom right corner. From the menu options, tap on your profile picture or name to access your personal profile.",
+    "status": "on"
+}
+
+{
+    "title": "Select Add Current City",
+    "content": "Tap on the Add Current City (Required) option to enter your hometown details.",
+    "status": "on"
+}
+
+{
+    "title": "Add Your Current City",
+    "content": "Tap on the Add Current City (Required) notification. This will allow you to input and select your current city, which will be used as your hometown.",
+    "status": "on"
+}
+
+
+{
+"title": "Navigate to Your Profile",
+"content": "Open the Facebook app and tap on the three horizontal lines (menu icon) usually located at the bottom right corner of the screen. From the menu options, select View your profile.",
+"status": "on"
+}
+
+{
+    "title": "Search for Profile Settings",
+    "content": "In the Facebook apps search bar, type in Profile Settings and then tap on it when it appears in the search results.",
+    "status": "on"
+}
+
+{
+    "title": "Accessing Profile Settings",
+    "content": "On your Facebook app, navigate to your profile by clicking on your profile picture or name. Once on your profile page, look for the Edit profile option and click on it.",
+    "status": "on"
+}
+
+
+{
+"title": "Accessing Profile Settings",
+"content": "Tap on the Edit profile button located near your profile picture and name.",
+"status": "on"
+}
+
+
+2 / 2
+json
+Copy code
+{
+    "title": "Add Your Bio",
+    "content": "Tap on the Add button located next to Bio to input and save your personal bio.",
+    "status": "off"
+}
+
+
+{
+"title": "Navigating
+
+
+{
+"title": "Edit Profile Information",
+"content": "On your Facebook apps main profile page, tap on Edit profile button, which is located next to your profile picture. Once inside the edit mode, scroll down to find an option labeled Bio or About. Tap on it to add or edit your personal bio.",
+"status": "on"
+}
+
+
+{
+"title": "Edit Profile Information",
+"content": "On the Facebook app profile page as shown in the screenshot, tap the Edit profile button located just below your profile picture and name. This will lead you to the profile editing section where you can typically add or modify your bio.",
+"status": "on"
+}
+
+
+{
+"title": "Go to Edit Profile",
+"content": "On your profile page, tap on the Edit profile button which is next to your profile picture and name.",
+"status": "on"
+}
+
+
+{
+"title": "Go to Edit Profile",
+"content": "On your profile page, click on the Edit profile button, which is located next to your profile picture and name.",
+"status": "on"
+}
+
+
+{
+"title": "Edit Profile",
+"content": "Tap on the Edit profile button located near your profile picture.",
+"status": "on"
+}
+
+
+{
+"title": "Accessing Profile Settings",
+"content": "Tap on the Edit profile button located on your profile page, just below your profile picture and name.",
+"status": "on"
+}
+
+
+{
+"title": "Navigating to the About section",
+"content": "On your profile page, scroll down until you see the Details section. Just above it, there should be an About tab. Tap on the About tab to navigate to your personal details and bio section.",
+"status": "on"
+}
+
+
+{
+"title": "Add Bio Information",
+"content": "Click on the Add button located next to Bio. This will allow you to enter and save your personal bio on your Facebook app profile.",
+"status": "on"
+}
+

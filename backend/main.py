@@ -12,6 +12,7 @@ import threading
 from dataclasses import dataclass
 from apns import send_apns_instruction, send_apns_event
 from copy import deepcopy
+from selenium.common.exceptions import TimeoutException
 
 _print = print
 
@@ -59,10 +60,15 @@ class SocketReceiver:
         item = self.chat_gpt_schedule[0]
         print(f"[INFO] Chat GPT scheduler running for {item.identifier}")
         # Run stuff on chat gpt
-        response = self.chat_gpt_handler.chatgpt_response(
-                        item.filepath, 
-                        self.user_identifier_to_question[item.identifier]
-                    )
+        try:
+            response = self.chat_gpt_handler.chatgpt_response(
+                            item.filepath, 
+                            self.user_identifier_to_question[item.identifier]
+                        )
+        except (json.JSONDecodeError, TimeoutException):
+            print("[INFO] Error occured; restarting chat gpt")
+            await self.run_chat_gpt_scheduler()
+            return
         # Send it back to Apple device
         if response["status"] == "on":
             print(f"[INFO] Sending APNS instruction to {self.user_identifier_to_device_token[item.identifier]}")
@@ -147,7 +153,7 @@ class SocketReceiver:
                     
                     case ServerStatus.PROCESSING:
                         time_diff = time.time() - self.user_identifier_to_timestamp[identifier]
-                        if (time.time() - self.user_identifier_to_timestamp[identifier] < 5):
+                        if (time.time() - self.user_identifier_to_timestamp[identifier] < 7):
                             continue
 
                         self.user_identifier_to_is_running[identifier] = True
@@ -168,7 +174,8 @@ class SocketReceiver:
                 await self.run_chat_gpt_scheduler()
                 print(f"[INFO] Scheduler end")
                 # Process done. Let them go through next stage now.
-        except websockets.exceptions.ConnectionClosedError:
+        except websockets.exceptions.ConnectionClosedError as e:
+            print(e)
             pass
 
     def process_frame(self, device_token, timestamp, frame_data) -> str:
@@ -178,7 +185,7 @@ class SocketReceiver:
         return filename
 
 async def run(receiver : SocketReceiver):
-    async with websockets.serve(receiver.video_receiver, "localhost", 5678):
+    async with websockets.serve(receiver.video_receiver, "localhost", 5678, ping_interval=None):
         await asyncio.Future()
 
 receiver = SocketReceiver()

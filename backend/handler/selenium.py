@@ -49,7 +49,7 @@ class ChatGPTAutomation:
         input_box.click()
 
         pyautogui.hotkey('ctrl', 'v')
-        WebDriverWait(self.driver, 60).until(EC.element_to_be_clickable((By.CSS_SELECTOR,"button[data-testid=\"send-button\"]")))
+        WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable((By.CSS_SELECTOR,"button[data-testid=\"send-button\"]")))
 
     def setup_webdriver(self, url : str, profile : str) -> webdriver.Firefox:
         """Initializes a Selenium WebDriver instance and actually do the main web rowser stuff"""
