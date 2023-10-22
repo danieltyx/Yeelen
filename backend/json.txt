@@ -276,3 +276,65 @@ Copy code
 "status": "on"
 }
 
+
+{
+"title": "Bluetooth Settings",
+"content": "Tap on the Bluetooth option in the settings menu.",
+"status": "on"
+}
+
+
+{
+"title": "Tap on Bluetooth",
+"content": "Locate and tap on the Bluetooth option in the list of settings.",
+"status": "on"
+}
+
+
+{
+"title": "Access Bluetooth Settings",
+"content": "Tap on Bluetooth in the settings menu.",
+"status": "on"
+}
+
+
+{
+"title": "Turning off Bluetooth",
+"content": "Tap on Bluetooth in the settings menu, then toggle the switch next to Bluetooth to the off position.",
+"status": "off"
+}
+
+{
+    "title": "Access Bluetooth Settings",
+    "content": "Tap on Bluetooth in the list of options.",
+    "status": "on"
+}
+
+
+{
+"title": "Access Bluetooth Settings",
+"content": "Tap on the Bluetooth option in the Settings app.",
+"status": "on"
+}
+
+
+{
+"title": "Bluetooth Settings",
+"content": "Tap on Bluetooth to access the Bluetooth settings.",
+"status": "on"
+}
+
+
+{
+"title": "Turn Off Bluetooth",
+"content": "Tap on the Bluetooth option to access Bluetooth settings.",
+"status": "on"
+}
+
+
+{
+"title": "Accessing Bluetooth Settings",
+"content": "Tap on Bluetooth to access its settings.",
+"status": "on"
+}
+
