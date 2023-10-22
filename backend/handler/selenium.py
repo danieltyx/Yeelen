@@ -1,4 +1,5 @@
 from selenium import webdriver
+import selenium
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
@@ -33,18 +34,22 @@ class ChatGPTAutomation:
         WebDriverWait(self.driver, 5).until(element_present)
 
         element = self.driver.find_element(By.XPATH, "//*[contains(text(), 'GPT4 Image')]")
-        element.click()
+        try:
+            element.click()
+        except selenium.common.exceptions.ElementNotInteractableException:
+            print("s this")
+            pass
 
     def paste(self) -> None:
         """Pastes the image into ChatGPT text box area properly."""
         element_present = EC.presence_of_element_located((By.XPATH, '//textarea[contains(@placeholder, "Send a message")]'))
-        WebDriverWait(self.driver, 5).until(element_present)
+        WebDriverWait(self.driver, 10).until(element_present)
 
         input_box = self.driver.find_element(by=By.XPATH, value='//textarea[contains(@placeholder, "Send a message")]')
         input_box.click()
 
         pyautogui.hotkey('ctrl', 'v')
-        WebDriverWait(self.driver, 15).until(EC.element_to_be_clickable((By.CSS_SELECTOR,"button[data-testid=\"send-button\"]")))
+        WebDriverWait(self.driver, 60).until(EC.element_to_be_clickable((By.CSS_SELECTOR,"button[data-testid=\"send-button\"]")))
 
     def setup_webdriver(self, url : str, profile : str) -> webdriver.Firefox:
         """Initializes a Selenium WebDriver instance and actually do the main web rowser stuff"""
@@ -82,7 +87,7 @@ class ChatGPTAutomation:
 
             if current_text == response_elements[-1].text:
                 times_unchanged += 1
-                time.sleep(0.5)
+                time.sleep(0.4)
                 continue
             
             times_unchanged = 0

@@ -13,6 +13,12 @@ from dataclasses import dataclass
 from apns import send_apns_instruction, send_apns_event
 from copy import deepcopy
 
+_print = print
+
+def print(x : str):
+    curr_time = time.strftime("%H:%M:%S", time.localtime())
+    _print(f"[{curr_time}] {x}")
+
 @dataclass
 class ChatGPTData:
     identifier : str
@@ -66,6 +72,9 @@ class SocketReceiver:
                 response["content"]
             )
             print("[INFO] Sent APNS instruction")
+
+            self.user_identifier_to_timestamp[item.identifier] = time.time()
+            self.user_identifier_to_is_running[item.identifier] = False
         else:
             print(f"[INFO] Sending APNS instruction to {self.user_identifier_to_device_token[item.identifier]}")
             await send_apns_event(
@@ -73,14 +82,17 @@ class SocketReceiver:
                 "close"
             )
             print("[INFO] Sent APNS instruction")
+            del self.user_identifier_to_device_token[item.identifier]
+            del self.user_identifier_to_is_running[item.identifier]
+            del self.user_identifier_to_question[item.identifier]
+            del self.user_identifier_to_timestamp[item.identifier]
+            del self.user_identifier_to_status[item.identifier]
 
         os.remove(item.filepath)
         # Event done
         del self.chat_gpt_schedule[0]
         # self.run_chat_gpt_scheduler()
 
-        self.user_identifier_to_timestamp[item.identifier] = time.time()
-        self.user_identifier_to_is_running[item.identifier] = False
 
     async def video_receiver(self, websocket, path) -> None:
         async for message in websocket:
@@ -105,6 +117,10 @@ class SocketReceiver:
 
             status = self.get_status(identifier)
 
+            # This enforcees status "off"
+            if not identifier in self.user_identifier_to_question:
+                continue
+
             # If their data is already being processed, skip
             if self.user_identifier_to_is_running.get(identifier, False):
                 continue
@@ -126,7 +142,7 @@ class SocketReceiver:
                 
                 case ServerStatus.PROCESSING:
                     time_diff = time.time() - self.user_identifier_to_timestamp[identifier]
-                    if (time.time() - self.user_identifier_to_timestamp[identifier] < 1):
+                    if (time.time() - self.user_identifier_to_timestamp[identifier] < 5):
                         continue
 
                     self.user_identifier_to_is_running[identifier] = True
@@ -142,9 +158,10 @@ class SocketReceiver:
                 identifier,
                 filename
             )
+            print(f"[INFO] {identifier}: added {filename}")
             self.chat_gpt_schedule.append(data_object)
             await self.run_chat_gpt_scheduler()
-            print(f"[INFO] {identifier}: added {filename}")
+            print(f"[INFO] Scheduler end")
             # Process done. Let them go through next stage now.
 
     def process_frame(self, device_token, timestamp, frame_data) -> str:

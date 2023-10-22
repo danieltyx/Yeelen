@@ -1,0 +1,140 @@
+
+{
+"title": "Access Cellular Settings",
+"content": "Tap on the Cellular option from the list in your settings.",
+"status": "on"
+}
+
+
+{
+"title": "Access Cellular Data Options",
+"content": "Tap on the Cellular option from the list in your settings.",
+"status": "on"
+}
+
+
+{
+"title": "Access Data Roaming Settings",
+"content": "Tap on Cellular Data Options which is just above the Personal Hotspot option.",
+"status": "on"
+}
+
+
+{
+"title": "Access Cellular Data Options",
+"content": "Tap on Cellular Data Options which is located just above the Personal Hotspot option.",
+"status": "on"
+}
+
+
+{
+"title": "Access Data Roaming",
+"content": "Tap on Cellular Data Options. Once inside, you will find the Data Roaming toggle. Toggle it to the off position to disable data roaming.",
+"status": "on"
+}
+
+
+{
+"title": "Access Data Roaming Settings",
+"content": "Tap on Cellular Data Options. Once inside, you should find the Data Roaming toggle. Tap on it to turn off data roaming.",
+"status": "on"
+}
+
+
+{
+"title": "Toggle Data Roaming",
+"content": "Tap on Data Roaming to turn it off. If the toggle switch turns gray, it means data roaming has been disabled.",
+"status": "on"
+}
+
+
+{
+"title": "Toggle Data Roaming",
+"content": "Tap on the Data Roaming option to turn it off. When the toggle switch turns gray, it means data roaming has been turned off.",
+"status": "on"
+}
+
+
+{
+"title": "Toggle Data Roaming",
+"content": "Tap on the Data Roaming option. If the toggle switch turns gray, it means data roaming is off.",
+"status": "off"
+}
+
+
+{
+"title": "Access Bluetooth Settings",
+"content": "Open the Settings app (represented by the gear icon) from your home screen.",
+"status": "on"
+}
+
+
+{
+"title": "Toggle Bluetooth",
+"content": "Tap on the Bluetooth option to access its settings.",
+"status": "on"
+}
+
+
+{
+"title": "Disable Bluetooth",
+"content": "Tap on the Bluetooth toggle to turn it off. The toggle will change from green to gray, indicating that Bluetooth has been disabled.",
+"status": "off"
+}
+
+
+{
+"title": "Toggle Bluetooth Off",
+"content": "Tap on the green switch next to Bluetooth to turn it off.",
+"status": "off"
+}
+
+
+{
+"title": "Access Bluetooth Settings",
+"content": "Swipe down on the Toggle Bluetooth notification and tap on it to open the Bluetooth settings in the Settings app.",
+"status": "on"
+}
+
+
+{
+"title": "Turn off Bluetooth",
+"content": "Tap on the Bluetooth option to access Bluetooth settings.",
+"status": "on"
+}
+
+
+{
+"title": "Toggle Bluetooth Switch",
+"content": "Tap the green Bluetooth switch to turn it off. The switch will turn gray once Bluetooth is deactivated.",
+"status": "off"
+}
+
+
+{
+"title": "Turn Off Bluetooth",
+"content": "Tap on the Bluetooth option in your settings.",
+"status": "on"
+}
+
+
+{
+"title": "Toggle Bluetooth Switch",
+"content": "Tap on the green Bluetooth toggle switch to turn it off. The switch will change to a gray color indicating that Bluetooth is now off.",
+"status": "on"
+}
+
+
+{
+"title": "Toggle the Bluetooth Switch",
+"content": "Tap the circular switch next to the word Bluetooth to turn it off. When Bluetooth is off, the switch will turn gray.",
+"status": "on"
+}
+
+
+{
+"title": "Toggle Bluetooth Off",
+"content": "Tap the circular switch next to the word Bluetooth to turn it off.",
+"status": "on"
+}
+
