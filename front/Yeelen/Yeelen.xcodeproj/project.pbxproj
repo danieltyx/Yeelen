@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		900390502AE4CFDB00F3858C /* FirebaseApp in Frameworks */ = {isa = PBXBuildFile; productRef = 9003904F2AE4CFDB00F3858C /* FirebaseApp */; };
+		900390522AE4D04600F3858C /* Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900390512AE4D04600F3858C /* Firebase.swift */; };
+		900390542AE4D10800F3858C /* Firestore in Frameworks */ = {isa = PBXBuildFile; productRef = 900390532AE4D10800F3858C /* Firestore */; };
 		90AB82C02AE449BD0049F204 /* YeelenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90AB82BF2AE449BD0049F204 /* YeelenApp.swift */; };
 		90AB82C22AE449BD0049F204 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90AB82C12AE449BD0049F204 /* ContentView.swift */; };
 		90AB82C42AE449BE0049F204 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90AB82C32AE449BE0049F204 /* Assets.xcassets */; };
@@ -56,6 +59,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		900390512AE4D04600F3858C /* Firebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Firebase.swift; sourceTree = "<group>"; };
 		90AB82BC2AE449BD0049F204 /* Yeelen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yeelen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90AB82BF2AE449BD0049F204 /* YeelenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YeelenApp.swift; sourceTree = "<group>"; };
 		90AB82C12AE449BD0049F204 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -96,7 +100,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				900390542AE4D10800F3858C /* Firestore in Frameworks */,
 				90F17A932AE4944400011DE4 /* ReplayKit.framework in Frameworks */,
+				900390502AE4CFDB00F3858C /* FirebaseApp in Frameworks */,
 				90F17AA22AE4948A00011DE4 /* Starscream in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -192,6 +198,7 @@
 				90F17A9F2AE4945800011DE4 /* Broadcast.entitlements */,
 				90F17A952AE4944400011DE4 /* SampleHandler.swift */,
 				90F17A972AE4944400011DE4 /* Info.plist */,
+				900390512AE4D04600F3858C /* Firebase.swift */,
 			);
 			path = Broadcast;
 			sourceTree = "<group>";
@@ -247,6 +254,8 @@
 			name = Broadcast;
 			packageProductDependencies = (
 				90F17AA12AE4948A00011DE4 /* Starscream */,
+				9003904F2AE4CFDB00F3858C /* FirebaseApp */,
+				900390532AE4D10800F3858C /* Firestore */,
 			);
 			productName = Broadcast;
 			productReference = 90F17A902AE4944400011DE4 /* Broadcast.appex */;
@@ -283,6 +292,7 @@
 				90CBEDD82AE453BC009B6EE0 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */,
 				90CBEDDF2AE454DE009B6EE0 /* XCRemoteSwiftPackageReference "SwiftUIX" */,
 				90F17AA02AE4948300011DE4 /* XCRemoteSwiftPackageReference "Starscream" */,
+				9003904A2AE4CFBD00F3858C /* XCRemoteSwiftPackageReference "FirebaseAdmin" */,
 			);
 			productRefGroup = 90AB82BD2AE449BD0049F204 /* Products */;
 			projectDirPath = "";
@@ -339,6 +349,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				900390522AE4D04600F3858C /* Firebase.swift in Sources */,
 				90F17A962AE4944400011DE4 /* SampleHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -634,6 +645,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		9003904A2AE4CFBD00F3858C /* XCRemoteSwiftPackageReference "FirebaseAdmin" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/1amageek/FirebaseAdmin";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 		90CBEDD82AE453BC009B6EE0 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/siteline/SwiftUI-Introspect";
@@ -661,6 +680,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		9003904F2AE4CFDB00F3858C /* FirebaseApp */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9003904A2AE4CFBD00F3858C /* XCRemoteSwiftPackageReference "FirebaseAdmin" */;
+			productName = FirebaseApp;
+		};
+		900390532AE4D10800F3858C /* Firestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9003904A2AE4CFBD00F3858C /* XCRemoteSwiftPackageReference "FirebaseAdmin" */;
+			productName = Firestore;
+		};
 		90CBEDD92AE453BC009B6EE0 /* SwiftUIIntrospect */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 90CBEDD82AE453BC009B6EE0 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */;

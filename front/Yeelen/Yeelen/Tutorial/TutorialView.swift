@@ -118,6 +118,7 @@ struct TutorialView: View {
 
                 Button {
                     UserDefaults(suiteName: "group.zhuhaoyu.yeelen")?.set(text, forKey: "question")
+                    UserDefaults(suiteName: "group.zhuhaoyu.yeelen")?.set(false, forKey: "shouldClose")
                     holder.button?.sendActions(for: .allEvents)
                 } label: {
                     Image("buttonGrad")

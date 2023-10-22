@@ -74,11 +74,15 @@ class AppDelegate: NSObject, UIApplicationDelegate, UNUserNotificationCenterDele
         didReceiveRemoteNotification userInfo: [AnyHashable: Any],
         fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void
     ) {
-        guard let aps = userInfo["aps"] as? [String: AnyObject] else {
-            completionHandler(.failed)
-            return
+        print("receive notification")
+
+        if (userInfo["type"] as? String) ?? "" == "event" {
+            print("event")
+            if (userInfo["type"] as? String) ?? "" == "close" {
+                print("close")
+                UserDefaults(suiteName: "group.zhuhaoyu.yeelen")?.set(true, forKey: "shouldClose")
+            }
         }
-        print(aps)
     }
 
 }
