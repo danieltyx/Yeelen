@@ -575,3 +575,93 @@ Copy code
 "status": "on"
 }
 
+
+{
+"title": "Edit Profile",
+"content": "Tap on the Edit profile button located near your profile picture.",
+
+
+{
+"title": "Navigating to Profile Settings",
+"content": "Click on the Edit profile button located near your profile picture on the Facebook app.",
+"status": "on"
+}
+
+{
+    "title": "Access Profile Settings",
+    "content": "Click on the Edit profile button located next to your profile picture and name.",
+    "status": "on"
+}
+
+
+{
+"title": "Adding a Bio on Facebook",
+"content": "Click on the Add button located next to the Bio section.",
+"status": "on"
+}
+
+
+{
+"title": "Navigate to Profile Section",
+"content": "Open your Facebook app and tap on the Profile tab located at the bottom right corner of the screen.",
+"status": "on"
+}
+
+
+{
+"title": "Add Bio Information",
+"content": "Tap on the Add button located next to the Bio section to input and save your bio details in the Facebook app.",
+"status": "off"
+}
+
+{
+    "title": "Open Settings App",
+    "content": "Locate and tap on the Settings icon on your home screen.",
+    "status": "on"
+}
+
+
+{
+"title": "Turn Off Bluetooth",
+"content": "Tap on Bluetooth to access the Bluetooth settings. Once inside, you will see a toggle switch. Tap on it to turn off Bluetooth.",
+"status": "off"
+}
+
+{
+    "title": "Open Bluetooth Settings",
+    "content": "Navigate to the Settings app on your device and tap on Bluetooth.",
+    "status": "on"
+}
+
+
+{
+"title": "Access the Battery Settings",
+"content": "From the main Settings menu, scroll down and tap on Battery.",
+"status": "on"
+}
+
+{
+    "title": "Go to Battery Settings",
+    "content": "Tap on General to enter the General settings. From there, you will find an option labeled Battery. Tap on it to access the battery settings.",
+    "status": "on"
+}
+
+{
+    "title": "Navigate to Battery Settings",
+    "content": "Tap on the General option in the settings menu.",
+    "status": "on"
+}
+
+{
+    "title": "Navigate to Battery Settings",
+    "content": "Scroll down in the Settings menu until you find the Battery option and tap on it.",
+    "status": "on"
+}
+
+
+{
+"title": "Enable Low Power Mode",
+"content": "Tap on the Low Power Mode switch to turn it on. It should change to a green color when activated.",
+"status": "off"
+}
+

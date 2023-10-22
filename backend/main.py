@@ -2,6 +2,7 @@ import asyncio
 import websockets
 import json
 import base64
+import threading
 from PIL import Image
 import io
 import os
@@ -24,6 +25,7 @@ def print(x : str):
 class ChatGPTData:
     identifier : str
     filepath : str
+    timestamp : int
 
 class ServerStatus(Enum):
     INITIAL = 0             # Client has just connected
@@ -58,6 +60,8 @@ class SocketReceiver:
             return
         
         item = self.chat_gpt_schedule[0]
+        del self.chat_gpt_schedule[0]
+
         print(f"[INFO] Chat GPT scheduler running for {item.identifier}")
         # Run stuff on chat gpt
         try:
@@ -78,9 +82,11 @@ class SocketReceiver:
                 response["content"]
             )
             print("[INFO] Sent APNS instruction")
-
+    
             self.user_identifier_to_timestamp[item.identifier] = time.time()
             self.user_identifier_to_is_running[item.identifier] = False
+
+            print(f"[INFO] New video timestamp limit: {self.user_identifier_to_timestamp[item.identifier]}")
         else:
             print(f"[INFO] Sending APNS instruction to {self.user_identifier_to_device_token[item.identifier]}")
             await send_apns_instruction(
@@ -101,8 +107,15 @@ class SocketReceiver:
 
         os.remove(item.filepath)
         # Event done
-        del self.chat_gpt_schedule[0]
-        # self.run_chat_gpt_scheduler()
+        await self.run_chat_gpt_scheduler()
+        #threading.Thread(target=asyncio.run(self.run_chat_gpt_scheduler)).start()
+
+    # def async_add_chat_gpt(self):
+    #     loop = asyncio.new_event_loop()
+    #     asyncio.set_event_loop(loop)
+
+    #     loop.run_until_complete(self.run_chat_gpt_scheduler())
+    #     loop.close()
 
     async def video_receiver(self, websocket, path) -> None:
         try:
@@ -153,7 +166,7 @@ class SocketReceiver:
                     
                     case ServerStatus.PROCESSING:
                         time_diff = time.time() - self.user_identifier_to_timestamp[identifier]
-                        if (time.time() - self.user_identifier_to_timestamp[identifier] < 7):
+                        if (frame_data["unixtime"] - self.user_identifier_to_timestamp[identifier] < 5):
                             continue
 
                         self.user_identifier_to_is_running[identifier] = True
@@ -167,7 +180,8 @@ class SocketReceiver:
 
                 data_object = ChatGPTData(
                     identifier,
-                    filename
+                    filename,
+                    frame_data["unixtime"]
                 )
                 print(f"[INFO] {identifier}: added {filename}")
                 self.chat_gpt_schedule.append(data_object)
