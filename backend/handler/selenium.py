@@ -60,7 +60,10 @@ class ChatGPTAutomation:
     def send_prompt_to_chatgpt(self, prompt : str) -> None:
         """ Sends a message to ChatGPT. """
         input_box = self.driver.find_element(by=By.XPATH, value='//textarea[contains(@placeholder, "Send a message")]')
-        self.driver.execute_script(f"arguments[0].value = '{prompt}';", input_box)
+        #input_box.set_value
+        input_box.send_keys(prompt)
+
+        #self.driver.execute_script(f"arguments[0].value = '{prompt}';", input_box)
 
         input_box.send_keys(Keys.RETURN)
         input_box.submit()

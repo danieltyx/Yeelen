@@ -1,6 +1,7 @@
 from handler.selenium import ChatGPTAutomation
 from settings import Settings
 import json
+import re
 
 class ChatGPTHandler:
     def __init__(self):
@@ -25,6 +26,24 @@ class ChatGPTHandler:
         self.chatgpt.copy_image_to_clipboard(image_file)
         self.chatgpt.paste()
         self.chatgpt.send_prompt_to_chatgpt(prompt)
-        json_string  = self.chatgpt.return_last_response()
+
+        json_string  = self.chatgpt.return_last_response().strip().lstrip("ChatGPT")
         data = json.loads(json_string)
         return data
+
+def test():
+        prompt = f"""
+        Your task is to provide the next step for the question How do I turn off my mobile data?. Based on the user's current progress, you should give a clear and concise instruction for the next action to take.
+        
+        Please provide the next step in the form of a JSON object, following the example format below:
+        {{
+            "title": "Title of the step",
+            "content": "Specific instruction for the next step",
+            "status": "on"
+        }}
+
+        The "title" should indicate the title of the step, the "content" should provide the specific instruction for the next step, and the "status" should be set to "on" if the task is not completed and "off" if this is the last step.
+
+        Please make sure that your instruction is clear, accurate, and easy to follow for the user."""
+
+        print(json.dumps(json.dumps(prompt)))

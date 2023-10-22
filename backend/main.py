@@ -35,7 +35,7 @@ class SocketReceiver:
 
         self.chat_gpt_handler : ChatGPTHandler = ChatGPTHandler()
         
-        self.chat_gpt_scheduler : list[ChatGPTData] = []
+        self.chat_gpt_schedule : list[ChatGPTData] = []
     
     def get_status(self, identifier : str) -> ServerStatus:
         if identifier in self.user_identifier_to_status:
@@ -43,40 +43,47 @@ class SocketReceiver:
         
         return ServerStatus.INITIAL
 
-    def chat_gpt_scheduler(self) -> None:
-        if len(self.chat_gpt_scheduler) == 0:
-            self.chat_gpt_scheduler()
-            time.sleep(1)
+    async def run_chat_gpt_scheduler(self) -> None:
+        print(f"[INFO] Running scheduler")
+        if len(self.chat_gpt_schedule) == 0:
+            # time.sleep(1)
+            # self.run_chat_gpt_scheduler()
             return
         
-        item = self.chat_gpt_scheduler[0]
+        item = self.chat_gpt_schedule[0]
+        print(f"[INFO] Chat GPT scheduler running for {item.identifier}")
         # Run stuff on chat gpt
-        response = ChatGPTHandler.chatgpt_response(
+        response = self.chat_gpt_handler.chatgpt_response(
                         item.filepath, 
                         self.user_identifier_to_question[item.identifier]
                     )
-        response = json.loads(response)
         # Send it back to Apple device
         if response["status"] == "on":
-            asyncio.run(send_apns_instruction(
+            print(f"[INFO] Sending APNS instruction to {self.user_identifier_to_device_token[item.identifier]}")
+            await send_apns_instruction(
                 self.user_identifier_to_device_token[item.identifier],
                 response["title"],
                 response["content"]
-            ))
+            )
+            print("[INFO] Sent APNS instruction")
         else:
-            asyncio.run(send_apns_event(
+            print(f"[INFO] Sending APNS instruction to {self.user_identifier_to_device_token[item.identifier]}")
+            await send_apns_event(
                 self.user_identifier_to_device_token[item.identifier],
                 "close"
-            ))
+            )
+            print("[INFO] Sent APNS instruction")
 
         os.remove(item.filepath)
         # Event done
-        del self.chat_gpt_scheduler[0]
-        self.chat_gpt_scheduler()
+        del self.chat_gpt_schedule[0]
+        # self.run_chat_gpt_scheduler()
+
+        self.user_identifier_to_timestamp[item.identifier] = time.time()
+        self.user_identifier_to_is_running[item.identifier] = False
 
     async def video_receiver(self, websocket, path) -> None:
         async for message in websocket:
-            # TO DO: add identifier as appropriate
             frame_data = json.loads(message)
             with open("logs.txt", "a") as file:
                 save_data = frame_data
@@ -99,7 +106,7 @@ class SocketReceiver:
             status = self.get_status(identifier)
 
             # If their data is already being processed, skip
-            if (identifier in self.user_identifier_to_is_running) and self.user_identifier_to_is_running[identifier]:
+            if self.user_identifier_to_is_running.get(identifier, False):
                 continue
 
             match status:
@@ -110,7 +117,7 @@ class SocketReceiver:
 
                 case ServerStatus.INITIAL_WAITING:
                     time_diff = time.time() - self.user_identifier_to_timestamp[identifier]
-                    if time_diff < 8:
+                    if time_diff < 2:
                         continue
 
                     # Send in initial prompt data
@@ -119,7 +126,7 @@ class SocketReceiver:
                 
                 case ServerStatus.PROCESSING:
                     time_diff = time.time() - self.user_identifier_to_timestamp[identifier]
-                    if (time.time() - self.user_identifier_to_timestamp[identifier] < 4):
+                    if (time.time() - self.user_identifier_to_timestamp[identifier] < 1):
                         continue
 
                     self.user_identifier_to_is_running[identifier] = True
@@ -135,10 +142,10 @@ class SocketReceiver:
                 identifier,
                 filename
             )
-            self.chat_gpt_scheduler.append(data_object)
+            self.chat_gpt_schedule.append(data_object)
+            await self.run_chat_gpt_scheduler()
+            print(f"[INFO] {identifier}: added {filename}")
             # Process done. Let them go through next stage now.
-            self.user_identifier_to_timestamp[identifier] = time.time()
-            self.user_identifier_to_is_running[identifier] = False
 
     def process_frame(self, device_token, timestamp, frame_data) -> str:
         filename = f"{device_token}-{timestamp}.png"
@@ -154,8 +161,4 @@ receiver = SocketReceiver()
 
 threading.Thread(
     target = asyncio.run(run(receiver))
-).run()
-
-threading.Thread(
-    target = receiver.chat_gpt_scheduler()
-).run()
+).start()
