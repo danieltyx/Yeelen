@@ -19,7 +19,7 @@ class ChatGPTHandler:
             "status": "on"
         }}
 
-        The "title" should indicate the title of the step, the "content" should provide the specific instruction for the next step, and the "status" should be set to "on" if the task is not completed and "off" if this is the last step.
+        The "title" should indicate the title of the step. The "content" should provide the specific instruction for the next step. The "status" should be set to "on" if the task is in progress and incomplete. If the task has been successfully completed, then set "status" to "off".
 
         Please make sure that your instruction is clear, accurate, in plain text format, and easy to follow for the user."""
         self.chatgpt.open_chat()

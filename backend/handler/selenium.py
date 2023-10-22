@@ -87,7 +87,7 @@ class ChatGPTAutomation:
 
             if current_text == response_elements[-1].text:
                 times_unchanged += 1
-                time.sleep(0.5)
+                time.sleep(0.4)
                 continue
             
             times_unchanged = 0
