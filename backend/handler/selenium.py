@@ -43,13 +43,13 @@ class ChatGPTAutomation:
     def paste(self) -> None:
         """Pastes the image into ChatGPT text box area properly."""
         element_present = EC.presence_of_element_located((By.XPATH, '//textarea[contains(@placeholder, "Send a message")]'))
-        WebDriverWait(self.driver, 5).until(element_present)
+        WebDriverWait(self.driver, 10).until(element_present)
 
         input_box = self.driver.find_element(by=By.XPATH, value='//textarea[contains(@placeholder, "Send a message")]')
         input_box.click()
 
         pyautogui.hotkey('ctrl', 'v')
-        WebDriverWait(self.driver, 15).until(EC.element_to_be_clickable((By.CSS_SELECTOR,"button[data-testid=\"send-button\"]")))
+        WebDriverWait(self.driver, 60).until(EC.element_to_be_clickable((By.CSS_SELECTOR,"button[data-testid=\"send-button\"]")))
 
     def setup_webdriver(self, url : str, profile : str) -> webdriver.Firefox:
         """Initializes a Selenium WebDriver instance and actually do the main web rowser stuff"""

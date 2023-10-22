@@ -1,1433 +1,1049 @@
 {
+    "identifier": "455752F8-D1A6-4C51-B63A-69EEB91AD3DF",
+    "question": "How can I add a Japanese Alphabet keyboard in the Settings App?",
     "apnsDeviceToken": "7d8b3a24cd5827c583367c1037ed6821ed2a0592931b8908a1c256f2ad5a7a46",
-    "type": "event",
-    "identifier": "644BC12E-CD39-46BC-86DE-427C582B3D2F",
-    "message": "start",
-    "question": "How can I turn off data roaming in my iPhone\u2019s settings app?"
-}
-{
-    "type": "video",
-    "identifier": "644BC12E-CD39-46BC-86DE-427C582B3D2F",
-    "timestamp": 13348.909604416
-}
-{
-    "type": "video",
-    "identifier": "644BC12E-CD39-46BC-86DE-427C582B3D2F",
-    "timestamp": 13350.009846416
-}
-{
-    "type": "video",
-    "identifier": "644BC12E-CD39-46BC-86DE-427C582B3D2F",
-    "timestamp": 13350.643319083
-}
-{
-    "type": "video",
-    "timestamp": 13351.043407083,
-    "identifier": "644BC12E-CD39-46BC-86DE-427C582B3D2F"
-}
-{
-    "type": "video",
-    "timestamp": 13351.443495083,
-    "identifier": "644BC12E-CD39-46BC-86DE-427C582B3D2F"
-}
-{
-    "timestamp": 13351.843583083,
-    "type": "video",
-    "identifier": "644BC12E-CD39-46BC-86DE-427C582B3D2F"
-}
-{
-    "identifier": "644BC12E-CD39-46BC-86DE-427C582B3D2F",
-    "timestamp": 13353.610671208,
-    "type": "video"
-}
-{
-    "type": "video",
-    "identifier": "644BC12E-CD39-46BC-86DE-427C582B3D2F",
-    "timestamp": 13365.6133465
-}
-{
-    "type": "video",
-    "identifier": "644BC12E-CD39-46BC-86DE-427C582B3D2F",
-    "timestamp": 13366.9136325
-}
-{
-    "type": "video",
-    "identifier": "644BC12E-CD39-46BC-86DE-427C582B3D2F",
-    "timestamp": 13367.3137205
-}
-{
-    "identifier": "644BC12E-CD39-46BC-86DE-427C582B3D2F",
-    "timestamp": 13367.7138085,
-    "type": "video"
-}
-{
-    "type": "video",
-    "identifier": "644BC12E-CD39-46BC-86DE-427C582B3D2F",
-    "timestamp": 13368.130566833
-}
-{
-    "identifier": "644BC12E-CD39-46BC-86DE-427C582B3D2F",
-    "timestamp": 13368.530687375,
-    "type": "video"
-}
-{
-    "type": "video",
-    "timestamp": 13368.930775375,
-    "identifier": "644BC12E-CD39-46BC-86DE-427C582B3D2F"
-}
-{
-    "identifier": "644BC12E-CD39-46BC-86DE-427C582B3D2F",
-    "timestamp": 13369.330863375,
-    "type": "video"
-}
-{
-    "identifier": "644BC12E-CD39-46BC-86DE-427C582B3D2F",
-    "timestamp": 13376.549155375,
-    "type": "video"
-}
-{
-    "type": "video",
-    "identifier": "644BC12E-CD39-46BC-86DE-427C582B3D2F",
-    "timestamp": 13376.949243375
-}
-{
-    "type": "video",
-    "identifier": "644BC12E-CD39-46BC-86DE-427C582B3D2F",
-    "timestamp": 13377.366001708
-}
-{
-    "type": "video",
-    "identifier": "644BC12E-CD39-46BC-86DE-427C582B3D2F",
-    "timestamp": 13377.766089708
-}
-{
-    "identifier": "644BC12E-CD39-46BC-86DE-427C582B3D2F",
-    "timestamp": 13378.166177708,
-    "type": "video"
-}
-{
-    "identifier": "644BC12E-CD39-46BC-86DE-427C582B3D2F",
-    "timestamp": 13378.566265708,
-    "type": "video"
-}
-{
-    "identifier": "644BC12E-CD39-46BC-86DE-427C582B3D2F",
-    "type": "video",
-    "timestamp": 13378.966353708
-}
-{
-    "timestamp": 13379.366441708,
-    "type": "video",
-    "identifier": "644BC12E-CD39-46BC-86DE-427C582B3D2F"
-}
-{
-    "type": "video",
-    "timestamp": 13379.766529708,
-    "identifier": "644BC12E-CD39-46BC-86DE-427C582B3D2F"
-}
-{
-    "identifier": "644BC12E-CD39-46BC-86DE-427C582B3D2F",
-    "type": "video",
-    "timestamp": 13380.166617708
-}
-{
-    "identifier": "644BC12E-CD39-46BC-86DE-427C582B3D2F",
-    "timestamp": 13380.566705708,
-    "type": "video"
-}
-{
-    "type": "video",
-    "identifier": "644BC12E-CD39-46BC-86DE-427C582B3D2F",
-    "timestamp": 13380.966793708
-}
-{
-    "type": "video",
-    "timestamp": 13381.550255375,
-    "identifier": "644BC12E-CD39-46BC-86DE-427C582B3D2F"
-}
-{
-    "type": "video",
-    "timestamp": 13381.950343375,
-    "identifier": "644BC12E-CD39-46BC-86DE-427C582B3D2F"
-}
-{
-    "type": "video",
-    "timestamp": 13382.350431375,
-    "identifier": "644BC12E-CD39-46BC-86DE-427C582B3D2F"
-}
-{
-    "type": "video",
-    "identifier": "644BC12E-CD39-46BC-86DE-427C582B3D2F",
-    "timestamp": 13382.750519375
-}
-{
-    "identifier": "644BC12E-CD39-46BC-86DE-427C582B3D2F",
-    "timestamp": 13383.150607375,
-    "type": "video"
-}
-{
-    "identifier": "6E118FE8-A6E6-4611-88D9-F7DDA28D5C3A",
-    "apnsDeviceToken": "7d8b3a24cd5827c583367c1037ed6821ed2a0592931b8908a1c256f2ad5a7a46",
-    "question": "How can I turn off data roaming in my iPhone\u2019s settings app?",
-    "type": "event",
-    "message": "start"
-}
-{
-    "identifier": "6E118FE8-A6E6-4611-88D9-F7DDA28D5C3A",
-    "timestamp": 13477.913584625,
-    "type": "video"
-}
-{
-    "type": "video",
-    "timestamp": 13478.363687916,
-    "identifier": "6E118FE8-A6E6-4611-88D9-F7DDA28D5C3A"
-}
-{
-    "timestamp": 13478.763775916,
-    "type": "video",
-    "identifier": "6E118FE8-A6E6-4611-88D9-F7DDA28D5C3A"
-}
-{
-    "type": "video",
-    "identifier": "6E118FE8-A6E6-4611-88D9-F7DDA28D5C3A",
-    "timestamp": 13479.163863916
-}
-{
-    "type": "video",
-    "timestamp": 13479.580627416,
-    "identifier": "6E118FE8-A6E6-4611-88D9-F7DDA28D5C3A"
-}
-{
-    "identifier": "6E118FE8-A6E6-4611-88D9-F7DDA28D5C3A",
-    "timestamp": 13479.980715416,
-    "type": "video"
-}
-{
-    "timestamp": 13480.380803416,
-    "type": "video",
-    "identifier": "6E118FE8-A6E6-4611-88D9-F7DDA28D5C3A"
-}
-{
-    "identifier": "6E118FE8-A6E6-4611-88D9-F7DDA28D5C3A",
-    "type": "video",
-    "timestamp": 13480.780891416
-}
-{
-    "identifier": "23E97A61-98CE-448A-BDD2-45FEE149DEFE",
-    "apnsDeviceToken": "7d8b3a24cd5827c583367c1037ed6821ed2a0592931b8908a1c256f2ad5a7a46",
-    "question": "How can I turn off data roaming in my iPhone\u2019s settings app?",
     "type": "event",
     "message": "start"
 }
 {
     "type": "video",
-    "identifier": "23E97A61-98CE-448A-BDD2-45FEE149DEFE",
-    "timestamp": 13632.906722875
+    "timestamp": 20606.344874125,
+    "identifier": "455752F8-D1A6-4C51-B63A-69EEB91AD3DF"
 }
 {
-    "identifier": "23E97A61-98CE-448A-BDD2-45FEE149DEFE",
-    "timestamp": 13633.306810875,
+    "type": "video",
+    "timestamp": 20607.245072125,
+    "identifier": "455752F8-D1A6-4C51-B63A-69EEB91AD3DF"
+}
+{
+    "timestamp": 20607.653525333,
+    "type": "video",
+    "identifier": "455752F8-D1A6-4C51-B63A-69EEB91AD3DF"
+}
+{
+    "timestamp": 20608.053613333,
+    "identifier": "455752F8-D1A6-4C51-B63A-69EEB91AD3DF",
     "type": "video"
 }
 {
     "type": "video",
-    "identifier": "23E97A61-98CE-448A-BDD2-45FEE149DEFE",
-    "timestamp": 13635.057195875
+    "identifier": "455752F8-D1A6-4C51-B63A-69EEB91AD3DF",
+    "timestamp": 20608.453701333
 }
 {
-    "timestamp": 13635.457283875,
     "type": "video",
-    "identifier": "23E97A61-98CE-448A-BDD2-45FEE149DEFE"
+    "identifier": "455752F8-D1A6-4C51-B63A-69EEB91AD3DF",
+    "timestamp": 20613.988252
 }
 {
-    "type": "event",
-    "identifier": "33A12D6D-A39A-4077-B4CA-6790D3A59336",
     "apnsDeviceToken": "7d8b3a24cd5827c583367c1037ed6821ed2a0592931b8908a1c256f2ad5a7a46",
-    "question": "How can I turn off data roaming in my iPhone\u2019s settings app?",
+    "question": "How can I turn off the Bluetooth in my iPhone\u2019s settings app?",
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "type": "event",
     "message": "start"
 }
 {
-    "identifier": "33A12D6D-A39A-4077-B4CA-6790D3A59336",
     "type": "video",
-    "timestamp": 13707.073382666
-}
-{
-    "type": "video",
-    "identifier": "33A12D6D-A39A-4077-B4CA-6790D3A59336",
-    "timestamp": 13707.506811333
-}
-{
-    "timestamp": 13707.906899333,
-    "type": "video",
-    "identifier": "33A12D6D-A39A-4077-B4CA-6790D3A59336"
-}
-{
-    "timestamp": 13708.306987333,
-    "type": "video",
-    "identifier": "33A12D6D-A39A-4077-B4CA-6790D3A59336"
-}
-{
-    "identifier": "33A12D6D-A39A-4077-B4CA-6790D3A59336",
-    "type": "video",
-    "timestamp": 13709.790647
-}
-{
-    "identifier": "33A12D6D-A39A-4077-B4CA-6790D3A59336",
-    "type": "video",
-    "timestamp": 13710.190735
-}
-{
-    "message": "start",
-    "apnsDeviceToken": "7d8b3a24cd5827c583367c1037ed6821ed2a0592931b8908a1c256f2ad5a7a46",
-    "question": "How can I turn off data roaming in my iPhone\u2019s settings app?",
-    "type": "event",
-    "identifier": "E1351ED2-DB14-47A7-9A82-D624639ECB8B"
+    "timestamp": 20702.891574125,
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8"
 }
 {
     "type": "video",
-    "timestamp": 13804.903680583,
-    "identifier": "E1351ED2-DB14-47A7-9A82-D624639ECB8B"
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "timestamp": 20703.325002791
+}
+{
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "type": "video",
+    "timestamp": 20703.725090791
+}
+{
+    "timestamp": 20705.225420791,
+    "type": "video",
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8"
+}
+{
+    "timestamp": 20705.625508791,
+    "type": "video",
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8"
 }
 {
     "type": "video",
-    "identifier": "E1351ED2-DB14-47A7-9A82-D624639ECB8B",
-    "timestamp": 13805.670515916
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "timestamp": 20706.025596791
 }
 {
-    "identifier": "E1351ED2-DB14-47A7-9A82-D624639ECB8B",
-    "timestamp": 13806.43735125,
+    "timestamp": 20706.425684791,
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
     "type": "video"
 }
 {
     "type": "video",
-    "identifier": "E1351ED2-DB14-47A7-9A82-D624639ECB8B",
-    "timestamp": 13806.83743925
+    "timestamp": 20706.825772791,
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8"
 }
 {
-    "identifier": "E1351ED2-DB14-47A7-9A82-D624639ECB8B",
-    "timestamp": 13807.245877916,
-    "type": "video"
-}
-{
-    "identifier": "E1351ED2-DB14-47A7-9A82-D624639ECB8B",
-    "timestamp": 13807.645965916,
-    "type": "video"
+    "timestamp": 20707.225860791,
+    "type": "video",
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8"
 }
 {
     "type": "video",
-    "identifier": "E1351ED2-DB14-47A7-9A82-D624639ECB8B",
-    "timestamp": 13808.26276825
-}
-{
-    "identifier": "E1351ED2-DB14-47A7-9A82-D624639ECB8B",
-    "type": "video",
-    "timestamp": 13810.16318625
-}
-{
-    "identifier": "E1351ED2-DB14-47A7-9A82-D624639ECB8B",
-    "timestamp": 13811.796901125,
-    "type": "video"
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "timestamp": 20707.625948791
 }
 {
     "type": "video",
-    "identifier": "E1351ED2-DB14-47A7-9A82-D624639ECB8B",
-    "timestamp": 13812.547066125
+    "timestamp": 20708.459465458,
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8"
 }
 {
-    "identifier": "E1351ED2-DB14-47A7-9A82-D624639ECB8B",
-    "timestamp": 13828.850718458,
-    "type": "video"
-}
-{
-    "identifier": "E1351ED2-DB14-47A7-9A82-D624639ECB8B",
-    "timestamp": 13830.451070458,
-    "type": "video"
+    "timestamp": 20710.026509458,
+    "type": "video",
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8"
 }
 {
     "type": "video",
-    "timestamp": 13832.351488458,
-    "identifier": "E1351ED2-DB14-47A7-9A82-D624639ECB8B"
+    "timestamp": 20710.443267791,
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8"
 }
 {
-    "message": "start",
-    "type": "event",
-    "identifier": "94364DA3-283E-485C-B635-AFA31EE079B0",
-    "apnsDeviceToken": "7d8b3a24cd5827c583367c1037ed6821ed2a0592931b8908a1c256f2ad5a7a46",
-    "question": "How can I turn off data roaming in my iPhone\u2019s settings app?"
-}
-{
-    "timestamp": 13942.934685,
     "type": "video",
-    "identifier": "94364DA3-283E-485C-B635-AFA31EE079B0"
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "timestamp": 20710.951723583
 }
 {
-    "identifier": "94364DA3-283E-485C-B635-AFA31EE079B0",
-    "timestamp": 13943.334773,
-    "type": "video"
-}
-{
-    "timestamp": 13943.734861,
     "type": "video",
-    "identifier": "94364DA3-283E-485C-B635-AFA31EE079B0"
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "timestamp": 20711.351811583
 }
 {
-    "timestamp": 13944.143288875,
+    "timestamp": 20712.552075583,
     "type": "video",
-    "identifier": "94364DA3-283E-485C-B635-AFA31EE079B0"
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8"
 }
 {
-    "identifier": "94364DA3-283E-485C-B635-AFA31EE079B0",
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
     "type": "video",
-    "timestamp": 13944.543376875
+    "timestamp": 20714.552515583
 }
 {
-    "timestamp": 13944.943464875,
     "type": "video",
-    "identifier": "94364DA3-283E-485C-B635-AFA31EE079B0"
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "timestamp": 20716.552955583
 }
 {
-    "identifier": "94364DA3-283E-485C-B635-AFA31EE079B0",
-    "timestamp": 13945.343552875,
-    "type": "video"
-}
-{
-    "identifier": "94364DA3-283E-485C-B635-AFA31EE079B0",
     "type": "video",
-    "timestamp": 13945.751982958
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "timestamp": 20718.453406333
 }
 {
-    "identifier": "94364DA3-283E-485C-B635-AFA31EE079B0",
-    "timestamp": 13946.152070958,
-    "type": "video"
-}
-{
-    "identifier": "94364DA3-283E-485C-B635-AFA31EE079B0",
     "type": "video",
-    "timestamp": 13946.668851291
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "timestamp": 20720.303813333
 }
 {
-    "identifier": "94364DA3-283E-485C-B635-AFA31EE079B0",
-    "type": "video",
-    "timestamp": 13949.569489291
-}
-{
-    "timestamp": 13951.369885291,
-    "type": "video",
-    "identifier": "94364DA3-283E-485C-B635-AFA31EE079B0"
-}
-{
-    "timestamp": 13953.270335875,
-    "type": "video",
-    "identifier": "94364DA3-283E-485C-B635-AFA31EE079B0"
-}
-{
-    "identifier": "94364DA3-283E-485C-B635-AFA31EE079B0",
-    "type": "video",
-    "timestamp": 13960.963733791
-}
-{
-    "timestamp": 13961.422168625,
-    "type": "video",
-    "identifier": "94364DA3-283E-485C-B635-AFA31EE079B0"
-}
-{
-    "timestamp": 13962.955839291,
-    "type": "video",
-    "identifier": "94364DA3-283E-485C-B635-AFA31EE079B0"
-}
-{
-    "identifier": "94364DA3-283E-485C-B635-AFA31EE079B0",
-    "type": "video",
-    "timestamp": 13964.856257291
-}
-{
-    "timestamp": 13965.839806958,
-    "type": "video",
-    "identifier": "94364DA3-283E-485C-B635-AFA31EE079B0"
-}
-{
-    "type": "event",
-    "identifier": "8D00C7E4-9583-4D45-B6D7-B9D906C4CAFA",
-    "apnsDeviceToken": "7d8b3a24cd5827c583367c1037ed6821ed2a0592931b8908a1c256f2ad5a7a46",
-    "question": "How can I turn off data roaming in my iPhone\u2019s settings app?",
-    "message": "start"
-}
-{
-    "timestamp": 14370.197293625,
-    "type": "video",
-    "identifier": "8D00C7E4-9583-4D45-B6D7-B9D906C4CAFA"
-}
-{
-    "identifier": "8D00C7E4-9583-4D45-B6D7-B9D906C4CAFA",
-    "timestamp": 14370.630722291,
+    "timestamp": 20724.354704333,
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
     "type": "video"
 }
 {
     "type": "video",
-    "timestamp": 14371.030810291,
-    "identifier": "8D00C7E4-9583-4D45-B6D7-B9D906C4CAFA"
-}
-{
-    "timestamp": 14371.439247208,
-    "type": "video",
-    "identifier": "8D00C7E4-9583-4D45-B6D7-B9D906C4CAFA"
-}
-{
-    "timestamp": 14371.839335208,
-    "type": "video",
-    "identifier": "8D00C7E4-9583-4D45-B6D7-B9D906C4CAFA"
-}
-{
-    "timestamp": 14372.289434208,
-    "type": "video",
-    "identifier": "8D00C7E4-9583-4D45-B6D7-B9D906C4CAFA"
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "timestamp": 20727.455424291
 }
 {
     "type": "video",
-    "timestamp": 14372.989588208,
-    "identifier": "8D00C7E4-9583-4D45-B6D7-B9D906C4CAFA"
+    "timestamp": 20729.355842291,
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8"
 }
 {
-    "identifier": "3FF6D37F-805D-432D-A81B-9D8928C28AE9",
-    "timestamp": 14482.780919833,
-    "type": "video"
-}
-{
-    "message": "start",
-    "type": "event",
-    "identifier": "3FF6D37F-805D-432D-A81B-9D8928C28AE9",
-    "apnsDeviceToken": "7d8b3a24cd5827c583367c1037ed6821ed2a0592931b8908a1c256f2ad5a7a46",
-    "question": "How can I turn off data roaming in my iPhone\u2019s settings app?"
-}
-{
-    "identifier": "3FF6D37F-805D-432D-A81B-9D8928C28AE9",
+    "timestamp": 20731.356282291,
     "type": "video",
-    "timestamp": 14483.2143485
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8"
 }
 {
     "type": "video",
-    "identifier": "3FF6D37F-805D-432D-A81B-9D8928C28AE9",
-    "timestamp": 14483.6144365
-}
-{
-    "identifier": "3FF6D37F-805D-432D-A81B-9D8928C28AE9",
-    "timestamp": 14484.0145245,
-    "type": "video"
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "timestamp": 20732.956634291
 }
 {
     "type": "video",
-    "identifier": "3FF6D37F-805D-432D-A81B-9D8928C28AE9",
-    "timestamp": 14485.698228166
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "timestamp": 20733.356754875
 }
 {
-    "identifier": "3FF6D37F-805D-432D-A81B-9D8928C28AE9",
-    "timestamp": 14486.106666875,
-    "type": "video"
+    "type": "video",
+    "timestamp": 20733.756842875,
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8"
 }
 {
-    "timestamp": 14486.506754875,
-    "identifier": "3FF6D37F-805D-432D-A81B-9D8928C28AE9",
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "type": "video",
+    "timestamp": 20734.156930875
+}
+{
+    "type": "video",
+    "timestamp": 20734.557018875,
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8"
+}
+{
+    "timestamp": 20735.823964208,
+    "type": "video",
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8"
+}
+{
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "timestamp": 20736.224052208,
     "type": "video"
 }
 {
     "type": "video",
-    "identifier": "3FF6D37F-805D-432D-A81B-9D8928C28AE9",
-    "timestamp": 14486.906842875
+    "timestamp": 20736.624140208,
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8"
 }
 {
-    "identifier": "3FF6D37F-805D-432D-A81B-9D8928C28AE9",
-    "timestamp": 14487.857051875,
-    "type": "video"
+    "timestamp": 20737.024228208,
+    "type": "video",
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8"
 }
 {
-    "identifier": "3FF6D37F-805D-432D-A81B-9D8928C28AE9",
-    "timestamp": 14489.857491875,
-    "type": "video"
-}
-{
-    "identifier": "3FF6D37F-805D-432D-A81B-9D8928C28AE9",
-    "timestamp": 14491.724569208,
-    "type": "video"
+    "timestamp": 20737.424316208,
+    "type": "video",
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8"
 }
 {
     "type": "video",
-    "identifier": "3FF6D37F-805D-432D-A81B-9D8928C28AE9",
-    "timestamp": 14493.658360625
-}
-{
-    "identifier": "3FF6D37F-805D-432D-A81B-9D8928C28AE9",
-    "timestamp": 14495.458756625,
-    "type": "video"
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "timestamp": 20738.324514208
 }
 {
     "type": "video",
-    "identifier": "3FF6D37F-805D-432D-A81B-9D8928C28AE9",
-    "timestamp": 14504.827519375
-}
-{
-    "identifier": "3FF6D37F-805D-432D-A81B-9D8928C28AE9",
-    "timestamp": 14505.227607375,
-    "type": "video"
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "timestamp": 20739.058008875
 }
 {
     "type": "video",
-    "identifier": "3FF6D37F-805D-432D-A81B-9D8928C28AE9",
-    "timestamp": 14505.627695375
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "timestamp": 20740.074899208
 }
 {
-    "timestamp": 14506.027783375,
     "type": "video",
-    "identifier": "3FF6D37F-805D-432D-A81B-9D8928C28AE9"
+    "timestamp": 20741.075151791,
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8"
 }
 {
-    "timestamp": 14506.427871375,
-    "identifier": "3FF6D37F-805D-432D-A81B-9D8928C28AE9",
-    "type": "video"
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "type": "video",
+    "timestamp": 20741.491910125
 }
 {
-    "identifier": "3FF6D37F-805D-432D-A81B-9D8928C28AE9",
-    "timestamp": 14507.461432041,
-    "type": "video"
-}
-{
-    "identifier": "3FF6D37F-805D-432D-A81B-9D8928C28AE9",
-    "timestamp": 14507.894860708,
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "timestamp": 20741.891998125,
     "type": "video"
 }
 {
     "type": "video",
-    "identifier": "3FF6D37F-805D-432D-A81B-9D8928C28AE9",
-    "timestamp": 14508.545036291
-}
-{
-    "identifier": "3FF6D37F-805D-432D-A81B-9D8928C28AE9",
-    "timestamp": 14509.361882625,
-    "type": "video"
-}
-{
-    "identifier": "3FF6D37F-805D-432D-A81B-9D8928C28AE9",
-    "timestamp": 14511.862432625,
-    "type": "video"
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "timestamp": 20742.292086125
 }
 {
     "type": "video",
-    "identifier": "3FF6D37F-805D-432D-A81B-9D8928C28AE9",
-    "timestamp": 14521.581299791
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "timestamp": 20742.692174125
 }
 {
     "type": "video",
-    "identifier": "3FF6D37F-805D-432D-A81B-9D8928C28AE9",
-    "timestamp": 14521.998058125
-}
-{
-    "message": "start",
-    "question": "How can I turn off data roaming in my iPhone\u2019s settings app?",
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
-    "apnsDeviceToken": "7d8b3a24cd5827c583367c1037ed6821ed2a0592931b8908a1c256f2ad5a7a46",
-    "type": "event"
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "timestamp": 20743.092262125
 }
 {
     "type": "video",
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
-    "timestamp": 14705.96436775
+    "timestamp": 20746.109592458,
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8"
 }
 {
     "type": "video",
-    "timestamp": 14706.36445575,
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032"
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "timestamp": 20746.509680458
 }
 {
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
-    "timestamp": 14706.76454375,
-    "type": "video"
-}
-{
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
     "type": "video",
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
-    "timestamp": 14707.16463175
+    "timestamp": 20746.909768458
 }
 {
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
-    "timestamp": 14714.166215541,
-    "type": "video"
-}
-{
+    "timestamp": 20747.309856458,
     "type": "video",
-    "timestamp": 14714.566303541,
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032"
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8"
 }
 {
-    "timestamp": 14714.974729416,
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
+    "timestamp": 20747.709977083,
+    "type": "video",
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8"
+}
+{
+    "timestamp": 20748.110065083,
+    "type": "video",
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8"
+}
+{
+    "timestamp": 20748.510153083,
+    "type": "video",
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8"
+}
+{
+    "timestamp": 20748.910241083,
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
     "type": "video"
 }
 {
     "type": "video",
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
-    "timestamp": 14715.374817416
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "timestamp": 20749.310329083
 }
 {
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
+    "timestamp": 20749.710417083,
     "type": "video",
-    "timestamp": 14717.258565083
-}
-{
-    "timestamp": 14717.658653083,
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
-    "type": "video"
-}
-{
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
-    "type": "video",
-    "timestamp": 14718.058741083
-}
-{
-    "timestamp": 14718.458829083,
-    "type": "video",
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032"
-}
-{
-    "timestamp": 14726.343950541,
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
-    "type": "video"
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8"
 }
 {
     "type": "video",
-    "timestamp": 14726.744038541,
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032"
+    "timestamp": 20750.110505083,
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8"
 }
 {
     "type": "video",
-    "timestamp": 14727.144126541,
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032"
+    "timestamp": 20750.510593083,
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8"
+}
+{
+    "timestamp": 20750.910681083,
+    "type": "video",
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8"
 }
 {
     "type": "video",
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
-    "timestamp": 14727.544214541
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "timestamp": 20751.310769083
+}
+{
+    "timestamp": 20751.710857083,
+    "type": "video",
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8"
 }
 {
     "type": "video",
-    "timestamp": 14727.944302541,
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032"
-}
-{
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
-    "type": "video",
-    "timestamp": 14728.344390541
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "timestamp": 20752.110945083
 }
 {
     "type": "video",
-    "timestamp": 14728.744478541,
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032"
-}
-{
-    "timestamp": 14729.144566541,
-    "type": "video",
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032"
-}
-{
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
-    "type": "video",
-    "timestamp": 14729.544654541
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "timestamp": 20752.511033083
 }
 {
     "type": "video",
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
-    "timestamp": 14729.944742541
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "timestamp": 20752.911121083
 }
 {
-    "timestamp": 14730.344830541,
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
-    "type": "video"
-}
-{
-    "timestamp": 14730.744918541,
+    "timestamp": 20753.311209083,
     "type": "video",
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032"
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8"
 }
 {
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
-    "type": "video",
-    "timestamp": 14731.145006541
-}
-{
-    "type": "video",
-    "timestamp": 14731.545094541,
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032"
-}
-{
-    "timestamp": 14732.078545208,
-    "type": "video",
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032"
-}
-{
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
-    "type": "video",
-    "timestamp": 14732.478633208
-}
-{
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
-    "type": "video",
-    "timestamp": 14732.878721208
-}
-{
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
-    "type": "video",
-    "timestamp": 14733.27884175
-}
-{
-    "type": "video",
-    "timestamp": 14733.67892975,
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032"
-}
-{
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
-    "type": "video",
-    "timestamp": 14734.095688083
-}
-{
-    "type": "video",
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
-    "timestamp": 14735.12924875
-}
-{
-    "type": "video",
-    "timestamp": 14735.554351875,
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032"
-}
-{
-    "type": "video",
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
-    "timestamp": 14736.254505875
-}
-{
-    "type": "video",
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
-    "timestamp": 14739.638583541
-}
-{
-    "type": "video",
-    "timestamp": 14743.139386458,
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032"
-}
-{
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
-    "type": "video",
-    "timestamp": 14745.139826458
-}
-{
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
-    "type": "video",
-    "timestamp": 14747.140266458
-}
-{
-    "type": "video",
-    "timestamp": 14754.45859675,
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032"
-}
-{
-    "type": "video",
-    "timestamp": 14754.85868475,
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032"
-}
-{
-    "timestamp": 14755.25877275,
-    "type": "video",
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032"
-}
-{
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
-    "type": "video",
-    "timestamp": 14755.65886075
-}
-{
-    "type": "video",
-    "timestamp": 14758.45947675,
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032"
-}
-{
-    "type": "video",
-    "timestamp": 14758.85956475,
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032"
-}
-{
-    "timestamp": 14759.25965275,
-    "type": "video",
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032"
-}
-{
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
-    "timestamp": 14759.65974075,
-    "type": "video"
-}
-{
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
-    "timestamp": 14760.05982875,
-    "type": "video"
-}
-{
-    "timestamp": 14774.796497666,
-    "type": "video",
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032"
-}
-{
-    "type": "video",
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
-    "timestamp": 14775.196585666
-}
-{
-    "timestamp": 14775.596673666,
-    "type": "video",
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032"
-}
-{
-    "timestamp": 14775.996761666,
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "timestamp": 20753.711297083,
     "type": "video"
 }
 {
     "type": "video",
-    "timestamp": 14776.846948666,
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032"
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "timestamp": 20754.111385083
 }
 {
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
     "type": "video",
-    "timestamp": 14778.814048
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "timestamp": 20754.511505625
 }
 {
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
     "type": "video",
-    "timestamp": 14779.214136
+    "timestamp": 20754.911593625,
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8"
 }
 {
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
     "type": "video",
-    "timestamp": 14779.614224
+    "timestamp": 20755.311681625,
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8"
 }
 {
-    "timestamp": 14780.022671291,
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "type": "video",
+    "timestamp": 20755.711769625
+}
+{
+    "type": "video",
+    "timestamp": 20756.111857625,
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8"
+}
+{
+    "type": "video",
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "timestamp": 20756.511945625
+}
+{
+    "type": "video",
+    "timestamp": 20756.912033625,
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8"
+}
+{
+    "type": "video",
+    "timestamp": 20757.312121625,
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8"
+}
+{
+    "type": "video",
+    "timestamp": 20757.712209625,
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8"
+}
+{
+    "type": "video",
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "timestamp": 20758.112297625
+}
+{
+    "type": "video",
+    "timestamp": 20758.512385625,
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8"
+}
+{
+    "type": "video",
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "timestamp": 20758.912473625
+}
+{
+    "type": "video",
+    "timestamp": 20759.796001291,
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8"
+}
+{
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "type": "video",
+    "timestamp": 20760.346122291
+}
+{
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "type": "video",
+    "timestamp": 20761.246320291
+}
+{
+    "type": "video",
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "timestamp": 20761.646440875
+}
+{
+    "type": "video",
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "timestamp": 20762.163221208
+}
+{
+    "timestamp": 20762.563309208,
+    "type": "video",
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8"
+}
+{
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "timestamp": 20762.963397208,
     "type": "video"
 }
 {
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
     "type": "video",
-    "timestamp": 14794.65925825
-}
-{
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
-    "type": "video",
-    "timestamp": 14795.059381041
+    "timestamp": 20763.363485208
 }
 {
     "type": "video",
-    "timestamp": 14795.459469041,
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032"
+    "timestamp": 20763.763573208,
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8"
 }
 {
     "type": "video",
-    "timestamp": 14795.859557041,
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032"
-}
-{
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
-    "type": "video",
-    "timestamp": 14796.259645041
+    "timestamp": 20764.530408541,
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8"
 }
 {
     "type": "video",
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
-    "timestamp": 14801.527470375
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "timestamp": 20765.280573541
+}
+{
+    "timestamp": 20766.030738541,
+    "type": "video",
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8"
+}
+{
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "type": "video",
+    "timestamp": 20766.764233208
 }
 {
     "type": "video",
-    "timestamp": 14802.160975583,
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032"
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "timestamp": 20767.564409208
 }
 {
-    "timestamp": 14815.013860125,
     "type": "video",
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032"
+    "timestamp": 20768.331244541,
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8"
 }
 {
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
     "type": "video",
-    "timestamp": 14815.413948125
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "timestamp": 20768.831387125
 }
 {
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
-    "type": "video",
-    "timestamp": 14815.814036125
-}
-{
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
-    "type": "video",
-    "timestamp": 14816.214124125
-}
-{
-    "timestamp": 14816.614212125,
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "timestamp": 20769.981640125,
     "type": "video"
 }
 {
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
     "type": "video",
-    "timestamp": 14818.447948791,
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032"
+    "timestamp": 20771.181904125
 }
 {
-    "timestamp": 14819.481509458,
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
     "type": "video",
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032"
-}
-{
-    "timestamp": 14819.881597458,
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
-    "type": "video"
-}
-{
-    "timestamp": 14820.281685458,
-    "type": "video",
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032"
-}
-{
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
-    "timestamp": 14820.690137541,
-    "type": "video"
-}
-{
-    "timestamp": 14821.573665208,
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
-    "type": "video"
-}
-{
-    "timestamp": 14821.990423541,
-    "type": "video",
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032"
-}
-{
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
-    "timestamp": 14823.232370666,
-    "type": "video"
-}
-{
-    "timestamp": 14823.649129,
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
-    "type": "video"
+    "timestamp": 20772.265475791
 }
 {
     "type": "video",
-    "timestamp": 14824.19925,
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032"
-}
-{
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
-    "timestamp": 14824.616008333,
-    "type": "video"
-}
-{
-    "timestamp": 14825.132788666,
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
-    "type": "video"
-}
-{
-    "timestamp": 14825.532876666,
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
-    "type": "video"
-}
-{
-    "timestamp": 14825.932964666,
-    "type": "video",
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032"
-}
-{
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
-    "type": "video",
-    "timestamp": 14826.333052666
-}
-{
-    "timestamp": 14826.733140666,
-    "type": "video",
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032"
-}
-{
-    "timestamp": 14827.133228666,
-    "type": "video",
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032"
-}
-{
-    "timestamp": 14827.533316666,
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
-    "type": "video"
-}
-{
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
-    "type": "video",
-    "timestamp": 14827.933404666
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "timestamp": 20772.865607791
 }
 {
     "type": "video",
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
-    "timestamp": 14828.333492666
-}
-{
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
-    "type": "video",
-    "timestamp": 14828.733580666
-}
-{
-    "timestamp": 14829.13370125,
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
-    "type": "video"
-}
-{
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
-    "type": "video",
-    "timestamp": 14829.53378925
+    "timestamp": 20773.532421125,
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8"
 }
 {
     "type": "video",
-    "timestamp": 14829.93387725,
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032"
+    "timestamp": 20774.332597125,
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8"
 }
 {
     "type": "video",
-    "timestamp": 14830.33396525,
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032"
-}
-{
-    "timestamp": 14830.73405325,
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
-    "type": "video"
-}
-{
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
-    "type": "video",
-    "timestamp": 14831.13414125
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "timestamp": 20775.132773125
 }
 {
     "type": "video",
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
-    "timestamp": 14831.53422925
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "timestamp": 20775.932981875
 }
 {
-    "timestamp": 14831.93431725,
     "type": "video",
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032"
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "timestamp": 20776.733157875
 }
 {
-    "timestamp": 14832.33440525,
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
+    "type": "video",
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "timestamp": 20777.683366875
+}
+{
+    "timestamp": 20778.883630875,
+    "type": "video",
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8"
+}
+{
+    "timestamp": 20780.083894875,
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
     "type": "video"
 }
 {
     "type": "video",
-    "timestamp": 14832.73449325,
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032"
-}
-{
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
-    "type": "video",
-    "timestamp": 14833.13458125
+    "timestamp": 20781.284158875,
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8"
 }
 {
     "type": "video",
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
-    "timestamp": 14833.551339583
-}
-{
-    "timestamp": 14833.951427583,
-    "type": "video",
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032"
-}
-{
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
-    "type": "video",
-    "timestamp": 14834.351515583
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "timestamp": 20782.484422875
 }
 {
     "type": "video",
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
-    "timestamp": 14834.751603583
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "timestamp": 20783.6847195
+}
+{
+    "timestamp": 20784.8849835,
+    "type": "video",
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8"
 }
 {
     "type": "video",
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
-    "timestamp": 14835.151691583
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "timestamp": 20785.9852255
 }
 {
-    "timestamp": 14835.551779583,
     "type": "video",
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032"
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "timestamp": 20786.401983833
 }
 {
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
     "type": "video",
-    "timestamp": 14835.951867583
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "timestamp": 20786.802071833
 }
 {
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
-    "timestamp": 14836.351988166,
+    "type": "video",
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "timestamp": 20787.202159833
+}
+{
+    "timestamp": 20787.602247833,
+    "type": "video",
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8"
+}
+{
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "timestamp": 20788.002335833,
     "type": "video"
 }
 {
     "type": "video",
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
-    "timestamp": 14836.752076166
-}
-{
-    "timestamp": 14837.152164166,
-    "type": "video",
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032"
+    "timestamp": 20788.402423833,
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8"
 }
 {
     "type": "video",
-    "timestamp": 14837.552252166,
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032"
+    "timestamp": 20788.802511833,
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8"
+}
+{
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "type": "video",
+    "timestamp": 20789.202599833
 }
 {
     "type": "video",
-    "timestamp": 14838.235735833,
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032"
+    "timestamp": 20789.602687833,
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8"
 }
 {
-    "timestamp": 14840.3695385,
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
+    "type": "video",
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "timestamp": 20790.002808416
+}
+{
+    "timestamp": 20790.402896416,
+    "type": "video",
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8"
+}
+{
+    "type": "video",
+    "timestamp": 20790.802984416,
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8"
+}
+{
+    "type": "video",
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "timestamp": 20791.203072416
+}
+{
+    "type": "video",
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "timestamp": 20791.603160416
+}
+{
+    "timestamp": 20792.003248416,
+    "type": "video",
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8"
+}
+{
+    "type": "video",
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "timestamp": 20792.603380416
+}
+{
+    "type": "video",
+    "timestamp": 20793.003468416,
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8"
+}
+{
+    "timestamp": 20793.403556416,
+    "type": "video",
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8"
+}
+{
+    "type": "video",
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "timestamp": 20793.803644416
+}
+{
+    "type": "video",
+    "timestamp": 20794.203732416,
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8"
+}
+{
+    "type": "video",
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "timestamp": 20794.603820416
+}
+{
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "timestamp": 20795.003908416,
+    "type": "video"
+}
+{
+    "timestamp": 20795.403996416,
+    "type": "video",
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8"
+}
+{
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "type": "video",
+    "timestamp": 20795.804084416
+}
+{
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "type": "video",
+    "timestamp": 20796.204172416
+}
+{
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "type": "video",
+    "timestamp": 20796.604260416
+}
+{
+    "timestamp": 20797.004381,
+    "type": "video",
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8"
+}
+{
+    "timestamp": 20797.404469,
+    "type": "video",
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8"
+}
+{
+    "type": "video",
+    "timestamp": 20797.804557,
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8"
+}
+{
+    "timestamp": 20798.204645,
+    "type": "video",
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8"
+}
+{
+    "type": "video",
+    "timestamp": 20798.604733,
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8"
+}
+{
+    "type": "video",
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "timestamp": 20799.004821
+}
+{
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "type": "video",
+    "timestamp": 20799.404909
+}
+{
+    "timestamp": 20799.804997,
+    "type": "video",
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8"
+}
+{
+    "type": "video",
+    "timestamp": 20800.205085,
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8"
+}
+{
+    "type": "video",
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "timestamp": 20800.605173
+}
+{
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "type": "video",
+    "timestamp": 20801.005261
+}
+{
+    "type": "video",
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "timestamp": 20801.405349
+}
+{
+    "type": "video",
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "timestamp": 20801.805437
+}
+{
+    "type": "video",
+    "timestamp": 20802.205525,
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8"
+}
+{
+    "type": "video",
+    "timestamp": 20802.605613,
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8"
+}
+{
+    "timestamp": 20803.439129666,
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
     "type": "video"
 }
 {
     "type": "video",
-    "timestamp": 14843.220198083,
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032"
+    "timestamp": 20804.53940425,
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8"
 }
 {
     "type": "video",
-    "timestamp": 14848.988133416,
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032"
+    "timestamp": 20805.222887916,
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8"
 }
 {
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
-    "timestamp": 14850.638529333,
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "timestamp": 20805.856360583,
     "type": "video"
 }
 {
-    "timestamp": 14852.538947333,
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
-    "type": "video"
+    "timestamp": 20806.43982225,
+    "type": "video",
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8"
+}
+{
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "type": "video",
+    "timestamp": 20806.83991025
+}
+{
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "type": "video",
+    "timestamp": 20807.256668583
 }
 {
     "type": "video",
-    "timestamp": 14854.105958666,
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032"
-}
-{
-    "timestamp": 14854.506046666,
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
-    "type": "video"
-}
-{
-    "timestamp": 14854.906134666,
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
-    "type": "video"
-}
-{
-    "timestamp": 14855.306222666,
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
-    "type": "video"
-}
-{
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
-    "type": "video",
-    "timestamp": 14855.706310666
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "timestamp": 20807.656756583
 }
 {
     "type": "video",
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
-    "timestamp": 14856.839893333
-}
-{
-    "timestamp": 14858.540300125,
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
-    "type": "video"
-}
-{
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
-    "type": "video",
-    "timestamp": 14860.224003791
+    "timestamp": 20808.056844583,
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8"
 }
 {
     "type": "video",
-    "timestamp": 14861.090861125,
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032"
+    "timestamp": 20808.823679916,
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8"
 }
 {
     "type": "video",
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
-    "timestamp": 14863.841466125
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "timestamp": 20809.223767916
 }
 {
-    "timestamp": 14864.841719,
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
-    "type": "video"
+    "timestamp": 20810.19064725,
+    "type": "video",
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8"
 }
 {
-    "timestamp": 14865.241807,
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "type": "video",
+    "timestamp": 20811.007526208
+}
+{
+    "type": "video",
+    "timestamp": 20811.424284541,
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8"
+}
+{
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "type": "video",
+    "timestamp": 20811.841046875
+}
+{
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "timestamp": 20812.241134875,
     "type": "video"
 }
 {
     "type": "video",
-    "timestamp": 14865.641895,
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032"
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "timestamp": 20812.641222875
 }
 {
     "type": "video",
-    "timestamp": 14866.041983,
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032"
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "timestamp": 20813.041310875
+}
+{
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "type": "video",
+    "timestamp": 20813.449742125
 }
 {
     "type": "video",
-    "timestamp": 14866.442071,
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032"
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "timestamp": 20813.883171125
 }
 {
-    "timestamp": 14866.842159,
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
+    "type": "video",
+    "timestamp": 20814.283259125,
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8"
+}
+{
+    "type": "video",
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "timestamp": 20814.683347125
+}
+{
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "timestamp": 20815.083435125,
     "type": "video"
 }
 {
     "type": "video",
-    "timestamp": 14867.242247,
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032"
-}
-{
-    "timestamp": 14867.642335,
-    "type": "video",
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032"
-}
-{
-    "timestamp": 14868.042423,
-    "type": "video",
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032"
+    "timestamp": 20815.483523125,
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8"
 }
 {
     "type": "video",
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
-    "timestamp": 14868.442511
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "timestamp": 20815.883611125
 }
 {
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
     "type": "video",
-    "timestamp": 14868.842599
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "timestamp": 20816.283699125
 }
 {
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
-    "timestamp": 14869.242687,
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "timestamp": 20816.683787125,
     "type": "video"
 }
 {
     "type": "video",
-    "timestamp": 14869.642775,
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032"
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "timestamp": 20817.083875125
 }
 {
     "type": "video",
-    "timestamp": 14870.042863,
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032"
+    "timestamp": 20817.483963125,
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8"
 }
 {
     "type": "video",
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
-    "timestamp": 14870.559643333
+    "timestamp": 20817.884051125,
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8"
 }
 {
     "type": "video",
-    "timestamp": 14870.959731333,
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032"
-}
-{
-    "timestamp": 14871.359819333,
-    "type": "video",
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032"
-}
-{
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
-    "type": "video",
-    "timestamp": 14871.759939916
+    "timestamp": 20818.284139125,
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8"
 }
 {
     "type": "video",
-    "timestamp": 14872.160027916,
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032"
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "timestamp": 20818.884271125
 }
 {
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
-    "timestamp": 14872.560115916,
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "type": "video",
+    "timestamp": 20819.701117458
+}
+{
+    "type": "video",
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "timestamp": 20820.551304458
+}
+{
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "type": "video",
+    "timestamp": 20820.951425041
+}
+{
+    "timestamp": 20821.351513041,
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
     "type": "video"
 }
 {
-    "timestamp": 14872.960203916,
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
+    "timestamp": 20821.751601041,
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
     "type": "video"
 }
 {
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
+    "timestamp": 20822.151689041,
     "type": "video",
-    "timestamp": 14873.360291916
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8"
 }
 {
     "type": "video",
-    "timestamp": 14873.760379916,
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032"
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "timestamp": 20822.551777041
 }
 {
-    "type": "video",
-    "timestamp": 14874.160467916,
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032"
-}
-{
-    "type": "video",
-    "timestamp": 14874.560555916,
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032"
-}
-{
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
-    "type": "video",
-    "timestamp": 14874.960643916
-}
-{
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
-    "type": "video",
-    "timestamp": 14875.360731916
-}
-{
-    "timestamp": 14876.060885916,
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
+    "timestamp": 20822.951865041,
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
     "type": "video"
 }
 {
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
     "type": "video",
-    "timestamp": 14876.460973916
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "timestamp": 20823.351953041
 }
 {
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
-    "type": "video",
-    "timestamp": 14876.861061916
-}
-{
-    "timestamp": 14877.261149916,
-    "type": "video",
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032"
-}
-{
-    "type": "video",
-    "timestamp": 14882.595707583,
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032"
-}
-{
-    "timestamp": 14882.995795583,
-    "identifier": "33A32095-884A-4923-A8F4-7F261939D032",
+    "timestamp": 20823.752041041,
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
     "type": "video"
+}
+{
+    "timestamp": 20824.152129041,
+    "type": "video",
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8"
+}
+{
+    "type": "video",
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "timestamp": 20824.552217041
+}
+{
+    "type": "video",
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "timestamp": 20824.952305041
+}
+{
+    "timestamp": 20825.352393041,
+    "type": "video",
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8"
+}
+{
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "timestamp": 20825.752481041,
+    "type": "video"
+}
+{
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8",
+    "timestamp": 20826.152569041,
+    "type": "video"
+}
+{
+    "type": "video",
+    "timestamp": 20826.552657041,
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8"
+}
+{
+    "timestamp": 20826.952745041,
+    "type": "video",
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8"
+}
+{
+    "timestamp": 20827.436184708,
+    "type": "video",
+    "identifier": "C60F45F0-6741-4F04-978C-9AF9EFB08BB8"
 }

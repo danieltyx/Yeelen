@@ -72,6 +72,9 @@ class SocketReceiver:
                 response["content"]
             )
             print("[INFO] Sent APNS instruction")
+
+            self.user_identifier_to_timestamp[item.identifier] = time.time()
+            self.user_identifier_to_is_running[item.identifier] = False
         else:
             print(f"[INFO] Sending APNS instruction to {self.user_identifier_to_device_token[item.identifier]}")
             await send_apns_event(
@@ -79,14 +82,17 @@ class SocketReceiver:
                 "close"
             )
             print("[INFO] Sent APNS instruction")
+            del self.user_identifier_to_device_token[item.identifier]
+            del self.user_identifier_to_is_running[item.identifier]
+            del self.user_identifier_to_question[item.identifier]
+            del self.user_identifier_to_timestamp[item.identifier]
+            del self.user_identifier_to_status[item.identifier]
 
         os.remove(item.filepath)
         # Event done
         del self.chat_gpt_schedule[0]
         # self.run_chat_gpt_scheduler()
 
-        self.user_identifier_to_timestamp[item.identifier] = time.time()
-        self.user_identifier_to_is_running[item.identifier] = False
 
     async def video_receiver(self, websocket, path) -> None:
         async for message in websocket:
@@ -110,6 +116,10 @@ class SocketReceiver:
                 continue
 
             status = self.get_status(identifier)
+
+            # This enforcees status "off"
+            if not identifier in self.user_identifier_to_question:
+                continue
 
             # If their data is already being processed, skip
             if self.user_identifier_to_is_running.get(identifier, False):
