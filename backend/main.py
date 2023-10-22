@@ -167,7 +167,7 @@ class SocketReceiver:
     def process_frame(self, device_token, timestamp, frame_data) -> str:
         filename = f"{device_token}-{timestamp}.png"
         image = Image.open(io.BytesIO(frame_data))
-        image.save(filename, 'PNG')
+        image.save(filename, 'PNG', optimize=True, quality=20)
         return filename
 
 async def run(receiver : SocketReceiver):
