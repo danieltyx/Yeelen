@@ -66,7 +66,11 @@ struct ContentView: View {
                 ScrollView(showsIndicators: false) {
                     VStack(spacing: 30) {
                         ForEach(TopHitManager.shared.topHits) { item in
-                            TopHitCard(image: item.appName, appName: item.appName, rank: item.rank, content: item.content)
+                            NavigationLink {
+                                TutorialView(text: item.content)
+                            } label: {
+                                TopHitCard(image: item.appName, appName: item.appName, rank: item.rank, content: item.content)
+                            }
                                 .padding(.horizontal, 30)
                         }
                     }

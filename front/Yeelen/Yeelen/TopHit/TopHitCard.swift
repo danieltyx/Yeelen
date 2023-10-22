@@ -23,8 +23,10 @@ struct TopHitCard: View {
                         .frame(width: 26, height: 26)
                         .clipShape(RoundedRectangle(cornerRadius: 8))
 
+
                     Text(appName)
                         .yFont(.semibold, size: 16)
+                        .foregroundStyle(.white)
                 }
 
                 Spacer()
@@ -40,6 +42,7 @@ struct TopHitCard: View {
                 Text(content)
                     .yFont(.medium, size: 14)
                     .foregroundStyle(Color(hexadecimal: "CCCCCC"))
+                    .multilineTextAlignment(.leading)
 
                 Spacer()
             }

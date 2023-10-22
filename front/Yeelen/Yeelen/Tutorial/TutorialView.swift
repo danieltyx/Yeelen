@@ -167,6 +167,7 @@ struct TutorialView: View {
             }
         }
         .navigationBarBackButtonHidden(true)
+        .background(Color(hexadecimal: "1A1A1A"))
         .ignoresSafeArea(.all)
     }
 }
