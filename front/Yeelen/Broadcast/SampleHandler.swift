@@ -88,8 +88,11 @@ class SampleHandler: RPBroadcastSampleHandler, WebSocketDelegate {
                         "type": "video",
                         "identifier": identifier.uuidString,
                         "data": data.base64EncodedString(),
-                        "timestamp": timestamp.seconds
+                        "timestamp": timestamp.seconds,
+                        "unixtime": Date().timeIntervalSince1970
                     ]
+
+                    print("send data \(data.count) \(timestamp)")
 
                     send(bodyObject: bodyObject)
                 }
@@ -110,7 +113,6 @@ class SampleHandler: RPBroadcastSampleHandler, WebSocketDelegate {
 
     func send(bodyObject: [String : Any]) {
         if let jsonData = try? JSONSerialization.data(withJSONObject: bodyObject, options: []) {
-            print("send data")
             socket.write(data: jsonData)
         }
     }
