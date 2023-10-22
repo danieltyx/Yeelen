@@ -67,7 +67,7 @@ struct ContentView: View {
                     VStack(spacing: 30) {
                         ForEach(TopHitManager.shared.topHits) { item in
                             NavigationLink {
-                                TutorialView(text: item.content)
+                                ProgressWrappedView(text: item.content)
                             } label: {
                                 TopHitCard(image: item.appName, appName: item.appName, rank: item.rank, content: item.content)
                             }

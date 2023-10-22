@@ -17,6 +17,8 @@ struct TutorialView: View {
 
     @State var holder = Holder()
 
+    @AppStorage("status", store: UserDefaults(suiteName: "group.zhuhaoyu.yeelen")) var status = false
+
     var body: some View {
         VStack(spacing: 0) {
             HStack {
@@ -119,6 +121,7 @@ struct TutorialView: View {
                 Button {
                     UserDefaults(suiteName: "group.zhuhaoyu.yeelen")?.set(text, forKey: "question")
                     UserDefaults(suiteName: "group.zhuhaoyu.yeelen")?.set(false, forKey: "shouldClose")
+                    status = false
                     holder.button?.sendActions(for: .allEvents)
                 } label: {
                     Image("buttonGrad")
@@ -167,7 +170,6 @@ struct TutorialView: View {
                 }
             }
         }
-        .navigationBarBackButtonHidden(true)
         .background(Color(hexadecimal: "1A1A1A"))
         .ignoresSafeArea(.all)
     }

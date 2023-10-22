@@ -8,11 +8,22 @@
 import SwiftUI
 
 struct ProgressWrappedView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+    let text: String
 
-#Preview {
-    ProgressWrappedView()
+    @Environment(\.dismiss) var dismiss
+
+    @AppStorage("status", store: UserDefaults(suiteName: "group.zhuhaoyu.yeelen")) var status = false
+
+    var body: some View {
+        if status {
+            InProgressView()
+                .onDisappear {
+                    dismiss()
+                }
+                .navigationBarBackButtonHidden(true)
+        } else {
+            TutorialView(text: text)
+                .navigationBarBackButtonHidden(true)
+        }
+    }
 }
