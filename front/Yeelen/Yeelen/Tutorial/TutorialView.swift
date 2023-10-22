@@ -47,7 +47,7 @@ struct TutorialView: View {
                     .padding(.horizontal, 30)
 
                     HStack {
-                        TextStepView(index: 2, content: "Yeelen will should a broadcast choosing picker. You just need to tap the “Start Broadcast” button below the picker.")
+                        TextStepView(index: 2, content: "Yeelen will show a broadcast choosing picker. You just need to tap the “Start Broadcast” button below the picker.")
 
                         Spacer()
                     }
