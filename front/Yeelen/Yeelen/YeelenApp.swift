@@ -75,10 +75,11 @@ class AppDelegate: NSObject, UIApplicationDelegate, UNUserNotificationCenterDele
         fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void
     ) {
         print("receive notification")
+        print(userInfo)
 
         if (userInfo["type"] as? String) ?? "" == "event" {
             print("event")
-            if (userInfo["type"] as? String) ?? "" == "close" {
+            if (userInfo["message"] as? String) ?? "" == "Close" {
                 print("close")
                 UserDefaults(suiteName: "group.zhuhaoyu.yeelen")?.set(true, forKey: "shouldClose")
             }

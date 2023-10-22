@@ -79,9 +79,7 @@ class SampleHandler: RPBroadcastSampleHandler, WebSocketDelegate {
             // Handle video sample buffer
             guard started else { return }
 
-            counter += 1
-
-            if counter >= 5 {
+            autoreleasepool {
                 if let image = imageFromSampleBuffer(sampleBuffer: sampleBuffer),
                    let data = image.jpegData(compressionQuality: 0.3) {
                     let timestamp = CMSampleBufferGetPresentationTimeStamp(sampleBuffer)
@@ -94,8 +92,6 @@ class SampleHandler: RPBroadcastSampleHandler, WebSocketDelegate {
                     ]
 
                     send(bodyObject: bodyObject)
-
-                    counter = 0
                 }
             }
 

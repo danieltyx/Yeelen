@@ -15,6 +15,8 @@ struct ContentView: View {
     @State var text = ""
     @FocusState var focus: Bool
 
+    @AppStorage("status", store: UserDefaults(suiteName: "group.zhuhaoyu.yeelen")) var status = false
+
     var body: some View {
         StackNavigationView {
             VStack(spacing: 0) {
@@ -68,6 +70,7 @@ struct ContentView: View {
                         ForEach(TopHitManager.shared.topHits) { item in
                             NavigationLink {
                                 ProgressWrappedView(text: item.content)
+                                    .navigationBarBackButtonHidden(true)
                             } label: {
                                 TopHitCard(image: item.appName, appName: item.appName, rank: item.rank, content: item.content)
                             }
@@ -99,7 +102,8 @@ struct ContentView: View {
                     Spacer()
 
                     NavigationLink {
-                        TutorialView(text: text)
+                        ProgressWrappedView(text: text)
+                            .navigationBarBackButtonHidden(true)
                     } label: {
                         Image("buttonGrad")
                             .resizable()
@@ -139,6 +143,9 @@ struct ContentView: View {
             .navigationBarTitle("")
             .navigationBarHidden(true)
             .ignoresSafeArea(.all)
+            .onAppear {
+                status = false
+            }
         }
         .ignoresSafeArea(.all)
     }
